@@ -7,7 +7,7 @@
         "e1b205b1-734b-4bf4-afe0-e32696b69320"
     ],
     "filterType": "GMObject",
-    "folderName": "Monsters",
+    "folderName": "Overworld Monsters",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
