@@ -127,11 +127,27 @@
             }
         },
         {
+            "Key": "39f75a51-6498-41aa-ba2d-8aed66b2b730",
+            "Value": {
+                "id": "ebebbab9-047a-4546-9b00-70cfef05f3bb",
+                "resourcePath": "objects\\oMcInit\\oMcInit.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3cc8918d-3787-48b2-a682-e311bd76ed1b",
             "Value": {
                 "id": "4905a5c2-37b7-41ab-8a65-9b5881dcfb6a",
                 "resourcePath": "views\\3cc8918d-3787-48b2-a682-e311bd76ed1b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "41900f02-3e8c-44c0-9b4d-0cf7f2ae04a1",
+            "Value": {
+                "id": "8a4613dd-6a59-4f87-af1c-3df56b29cf3c",
+                "resourcePath": "sprites\\sBattleAction\\sBattleAction.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -143,11 +159,11 @@
             }
         },
         {
-            "Key": "45d548b9-5c81-4298-b445-519bae68e841",
+            "Key": "41a837c0-a84f-4a98-92df-defa73a6cf22",
             "Value": {
-                "id": "ba6e1d2b-7e16-43f6-b1e4-4b514f29a2ab",
-                "resourcePath": "sprites\\sprite_arrowTarget\\sprite_arrowTarget.yy",
-                "resourceType": "GMSprite"
+                "id": "c3adbec6-2196-4681-9e3f-447624cbb79e",
+                "resourcePath": "objects\\oCombatAction\\oCombatAction.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -340,6 +356,14 @@
                 "id": "2e7aca22-90e0-4475-91b6-d1c6a9b04b2d",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "a98db759-03c7-4712-adeb-5844ef1d74fd",
+            "Value": {
+                "id": "686f7cd5-62f8-40d4-a501-5f620c4f05c9",
+                "resourcePath": "views\\a98db759-03c7-4712-adeb-5844ef1d74fd.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
