@@ -1,8 +1,8 @@
 {
-    "id": "456f58ff-d9cb-4d75-b9c4-fc44aa751d87",
+    "id": "0134753c-e230-4a9e-b4ce-fa91de50ee1a",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "leave_combat",
+    "name": "fightOrder",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -7,7 +7,7 @@
         "8d819849-6c39-4f23-b9ec-88f7e465ca14"
     ],
     "filterType": "GMObject",
-    "folderName": "Combat Monsters",
+    "folderName": "Battle Monsters",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

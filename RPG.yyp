@@ -31,6 +31,22 @@
     },
     "resources": [
         {
+            "Key": "0100cddd-c498-47dd-9208-0030fd42393f",
+            "Value": {
+                "id": "58a76112-08e4-4f50-98c1-0650afe34fa2",
+                "resourcePath": "objects\\oCombatCurrentPlayer\\oCombatCurrentPlayer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "0134753c-e230-4a9e-b4ce-fa91de50ee1a",
+            "Value": {
+                "id": "35ec2c8c-1bf8-468b-b19e-d211ea38e09a",
+                "resourcePath": "scripts\\fightOrder\\fightOrder.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "064698e9-e783-46f1-a70a-8761957a3b65",
             "Value": {
                 "id": "a2c6f513-aa0a-45d2-becd-8e166aec8f40",
@@ -52,6 +68,14 @@
                 "id": "6d60a1d1-9bac-4333-bc47-b1e332232f0a",
                 "resourcePath": "views\\07bf182f-33c1-4389-92e6-28146e0cc5a3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "106be289-7a96-4adb-a1e8-5a0ebc33a3f3",
+            "Value": {
+                "id": "e24a3b3e-c8b4-4950-8830-5a61d5f7fa95",
+                "resourcePath": "sprites\\sprite_arrow\\sprite_arrow.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -79,11 +103,27 @@
             }
         },
         {
+            "Key": "345793ab-9042-4779-abcf-91749056ada9",
+            "Value": {
+                "id": "0da70a85-2190-4676-b2af-bdbe6fb68bd3",
+                "resourcePath": "scripts\\nextTurn\\nextTurn.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "34c09dce-4d23-46b3-911a-b2e4cdfcf43a",
             "Value": {
                 "id": "494c40eb-ca82-44e9-873f-05fd32c207b6",
                 "resourcePath": "objects\\obj_char_battle\\obj_char_battle.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3984f757-c47f-40fc-b1e4-820d79b34f94",
+            "Value": {
+                "id": "27851658-b155-400a-bb5a-8e1ef42899a4",
+                "resourcePath": "scripts\\createMonster\\createMonster.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -103,11 +143,11 @@
             }
         },
         {
-            "Key": "456f58ff-d9cb-4d75-b9c4-fc44aa751d87",
+            "Key": "4795aa74-a46b-437d-8969-6054823008c6",
             "Value": {
-                "id": "b9be542d-0b84-45d2-9ae6-64bd0a1a487d",
-                "resourcePath": "scripts\\leave_combat\\leave_combat.yy",
-                "resourceType": "GMScript"
+                "id": "2c4fe68b-3b0d-431a-a3ca-51de355ce25d",
+                "resourcePath": "objects\\oCombatController\\oCombatController.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -143,11 +183,27 @@
             }
         },
         {
+            "Key": "551e780b-3fa2-484f-92fc-31eef27112cd",
+            "Value": {
+                "id": "2c2dbb57-2ea0-4d77-b5b3-f7131dcd0c2f",
+                "resourcePath": "scripts\\updateNextTurn\\updateNextTurn.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "55a35548-64a2-47db-93dc-6c3594e59418",
             "Value": {
                 "id": "73410f77-cbd3-4c83-b8f5-c146774fa4b2",
                 "resourcePath": "sprites\\sprite_comp\\sprite_comp.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "56405ffc-3f53-4a09-873a-3489b6939f3b",
+            "Value": {
+                "id": "56965e65-ee5a-49f8-845c-dd4b78e49444",
+                "resourcePath": "views\\56405ffc-3f53-4a09-873a-3489b6939f3b.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -178,8 +234,16 @@
             "Key": "65fe9998-552d-4fcf-8d18-fba54ab984bd",
             "Value": {
                 "id": "1ccadf86-853a-433e-94e3-7c7090d1030c",
-                "resourcePath": "scripts\\enter_combat\\enter_combat.yy",
+                "resourcePath": "scripts\\enterCombat\\enterCombat.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "68e2d1a2-c1d7-471e-ae2b-b208d7293fda",
+            "Value": {
+                "id": "98ca97d5-8f62-40ac-a399-4c1323115980",
+                "resourcePath": "objects\\oGameInit\\oGameInit.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -207,6 +271,14 @@
             }
         },
         {
+            "Key": "7f821d83-eab3-4bf8-b6dd-ef3c261eb9ab",
+            "Value": {
+                "id": "9c32349e-9351-4650-a350-123dc8dec7bd",
+                "resourcePath": "views\\7f821d83-eab3-4bf8-b6dd-ef3c261eb9ab.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "88300aed-7387-405e-82be-db1a451bd7e5",
             "Value": {
                 "id": "1c7f3a8f-4688-4395-8caa-cb5f38e1e605",
@@ -218,7 +290,7 @@
             "Key": "8d819849-6c39-4f23-b9ec-88f7e465ca14",
             "Value": {
                 "id": "fbcc172a-4784-4d24-8a9c-fd57e06869da",
-                "resourcePath": "objects\\obj_monster_combat\\obj_monster_combat.yy",
+                "resourcePath": "objects\\obj_monster_battle\\obj_monster_battle.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -236,6 +308,14 @@
                 "id": "8d8fc8f4-e0bb-4995-ab4d-55841c8f6c25",
                 "resourcePath": "sprites\\sprite_char\\sprite_char.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a4055d09-871c-434b-9ec5-d10355510076",
+            "Value": {
+                "id": "55a6910d-5aa6-4320-b4d3-645222404bd1",
+                "resourcePath": "views\\a4055d09-871c-434b-9ec5-d10355510076.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -362,7 +442,10 @@
     "script_order": [
         "f9208de4-04d4-466f-990d-aa1f3fac3517",
         "65fe9998-552d-4fcf-8d18-fba54ab984bd",
-        "456f58ff-d9cb-4d75-b9c4-fc44aa751d87"
+        "3984f757-c47f-40fc-b1e4-820d79b34f94",
+        "0134753c-e230-4a9e-b4ce-fa91de50ee1a",
+        "345793ab-9042-4779-abcf-91749056ada9",
+        "551e780b-3fa2-484f-92fc-31eef27112cd"
     ],
     "tutorial": ""
 }

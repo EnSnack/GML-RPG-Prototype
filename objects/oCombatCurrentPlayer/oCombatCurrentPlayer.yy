@@ -1,10 +1,19 @@
 {
-    "id": "8d819849-6c39-4f23-b9ec-88f7e465ca14",
+    "id": "0100cddd-c498-47dd-9208-0030fd42393f",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_monster_combat",
+    "name": "oCombatCurrentPlayer",
     "eventList": [
-        
+        {
+            "id": "79fd919c-e1c7-4f87-9110-26f24f8561f3",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "0100cddd-c498-47dd-9208-0030fd42393f"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -24,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "77529e78-9d30-4ce9-b4aa-ec6918f35d49",
+    "spriteId": "106be289-7a96-4adb-a1e8-5a0ebc33a3f3",
     "visible": true
 }

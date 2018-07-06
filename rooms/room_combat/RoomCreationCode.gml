@@ -1,0 +1,1 @@
+createMonster(obj_monster_battle, 1);
