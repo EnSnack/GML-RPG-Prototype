@@ -1,5 +1,5 @@
-if(oCombatController.currentTeamTurn == partyLeft) {
-	oCombatController.nextTeamTurn = partyRight;
-} else if(oCombatController.currentTeamTurn == partyRight) {
-	oCombatController.nextTeamTurn = partyLeft;
+if(oCombatController.currentTeamTurn == oCombatController.partyLeft) {
+	oCombatController.nextTeamTurn = oCombatController.partyRight;
+} else if(oCombatController.currentTeamTurn == oCombatController.partyRight) {
+	oCombatController.nextTeamTurn = oCombatController.partyLeft;
 }

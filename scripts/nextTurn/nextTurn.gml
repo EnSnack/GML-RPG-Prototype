@@ -9,5 +9,3 @@ if(oCombatController.currentTeamIndex < ds_list_size(oCombatController.currentTe
 }
 
 oCombatController.currentPlayerTurn = ds_list_find_value(oCombatController.currentTeamTurn, oCombatController.currentTeamIndex);
-
-show_debug_message(oCombatController.currentPlayerTurn);

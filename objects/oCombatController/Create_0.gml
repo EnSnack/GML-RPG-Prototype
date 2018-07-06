@@ -2,14 +2,16 @@
 partyLeft = ds_list_create();
 partyRight = ds_list_create();
 
-//Track Teams
-currentTeamTurn = 0;
-nextTeamTurn = 0;
+createMonster(obj_monster_battle, 3);
 
-currentPlayerTurn = 0;
-nextPlayerTurn = 0;
+//Track Teams
+currentTeamTurn = noone;
+nextTeamTurn = noone;
+
+currentPlayerTurn = noone;
+nextPlayerTurn = noone;
 
 currentTeamIndex = 0;
 
-currentTeamTurn = choose(partyLeft, partyRight);
+currentTeamTurn = partyLeft;
 currentPlayerTurn = ds_list_find_value(currentTeamTurn, currentTeamIndex);

@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "45d548b9-5c81-4298-b445-519bae68e841",
+            "Value": {
+                "id": "ba6e1d2b-7e16-43f6-b1e4-4b514f29a2ab",
+                "resourcePath": "sprites\\sprite_arrowTarget\\sprite_arrowTarget.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4795aa74-a46b-437d-8969-6054823008c6",
             "Value": {
                 "id": "2c4fe68b-3b0d-431a-a3ca-51de355ce25d",
@@ -308,6 +316,14 @@
                 "id": "8d8fc8f4-e0bb-4995-ab4d-55841c8f6c25",
                 "resourcePath": "sprites\\sprite_char\\sprite_char.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a3243186-fe20-4608-bf74-900ac4b25c17",
+            "Value": {
+                "id": "3911f2d4-c376-424d-81b3-40e3d90c12c7",
+                "resourcePath": "objects\\oCombatCurrentTarget\\oCombatCurrentTarget.yy",
+                "resourceType": "GMObject"
             }
         },
         {
