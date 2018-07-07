@@ -15,10 +15,14 @@ if(oGameInit.debugmode == 1) {
 	var text  = "DEBUG:\n";
 		text += "Objects in room: " + string(instance_count) + "\n";
 		text += "Current Object: " + string(current_object) + "\n";
+		text += "Health of allies: \n"; 
+		text += "Char." + string(ds_list_find_value(oCombatController.partyLeft, 0).curHealth) + "\n";
+		text += "Comp." + string(ds_list_find_value(oCombatController.partyLeft, 1).curHealth) + "\n";
 		text += "Health of enemies: \n"; 
 		text += "1." + string(ds_list_find_value(oCombatController.partyRight, 0).curHealth) + "\n";
 		text += "2." + string(ds_list_find_value(oCombatController.partyRight, 1).curHealth) + "\n";
-		text += "3." + string(ds_list_find_value(oCombatController.partyRight, 1).curHealth) + "\n";
+		text += "3." + string(ds_list_find_value(oCombatController.partyRight, 2).curHealth) + "\n";
+		text += "Current Turn: " + string(object_get_name(oCombatController.currentPlayerTurn.object_index)) + "\n";
 	
 	draw_text(0,0,text);
 }

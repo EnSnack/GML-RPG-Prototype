@@ -487,6 +487,14 @@
             }
         },
         {
+            "Key": "eba442dd-05ef-434b-97b3-dbfe347ff4e3",
+            "Value": {
+                "id": "18b13332-a3e8-49ce-baaf-e63adb4c436f",
+                "resourcePath": "objects\\oCombatUI\\oCombatUI.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ee9ed51a-fe5c-4815-9a2e-8997b086865c",
             "Value": {
                 "id": "393c04fe-bcd3-4023-9e13-7eab1202735b",

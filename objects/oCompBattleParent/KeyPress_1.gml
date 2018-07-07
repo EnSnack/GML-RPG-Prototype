@@ -21,10 +21,8 @@ if(active) {
 	if(state == "attack") {
 		if(keyboard_check_pressed(combat_inputs[3]) && curTarget < ds_list_find_value(oCombatController.partyRight, ds_list_size(oCombatController.partyRight)-1)) {
 			curTarget++;	
-			show_debug_message(curTarget);
 		} else if(keyboard_check_pressed(combat_inputs[2]) && curTarget > ds_list_find_value(oCombatController.partyRight, 0)) {
 			curTarget--;
-			show_debug_message(curTarget);
 		}
 		if (keyboard_check_pressed(combat_inputs[0])) {
 			curTarget.curHealth = curTarget.curHealth - curDamage;
