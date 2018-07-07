@@ -10,4 +10,4 @@ if(oCombatController.currentTeamIndex < ds_list_size(oCombatController.currentTe
 
 oCombatController.currentPlayerTurn = ds_list_find_value(oCombatController.currentTeamTurn, oCombatController.currentTeamIndex);
 obj_char_battle.state = "idle";
-oCombatAction.actChoice = 0;
+obj_comp_battle.state = "idle";

@@ -4,20 +4,11 @@
     "mvc": "1.0",
     "name": "obj_comp_battle",
     "eventList": [
-        {
-            "id": "2be2dc48-9cfe-4843-8b46-4d77a76da036",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "5a9bed20-cfa8-4b33-a98c-bfedb2d3ae56"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "7a9e0f8c-d577-457c-91c5-153511fe61b0",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
