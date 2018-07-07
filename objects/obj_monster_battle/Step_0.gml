@@ -6,7 +6,12 @@ if (oCombatController.currentPlayerTurn == id) {
 	active = false;
 }
 if(active) {
-	obj_char_battle.curHealth = obj_char_battle.curHealth - curDamage;
+	curTarget =	ds_list_find_value(oCombatController.partyLeft, irandom(ds_list_size(oCombatController.partyLeft)-1));
+	if(curTarget.state != "dead") {
+		curTarget.curHealth = curTarget.curHealth - curDamage;
+	} else {
+		curTarget =	ds_list_find_value(oCombatController.partyLeft, irandom(ds_list_size(oCombatController.partyLeft)-1));
+	}
 	nextTurn();
 }
 if(self.curHealth <= 0) {

@@ -5,3 +5,6 @@ if (oCombatController.currentPlayerTurn == id) {
 } else {
 	active = false;
 }
+if(curHealth <= 0) {
+	state = "dead";	
+}
