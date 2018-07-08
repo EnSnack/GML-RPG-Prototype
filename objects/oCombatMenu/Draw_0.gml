@@ -5,4 +5,8 @@ switch(obj_char_battle.state) {
 		draw_sprite(sBattleMenuFinger, 0, oCombatAction.x+50, fingery);
 		draw_sprite(sprite_index, 0, oCombatAction.x+200, oCombatAction.y);
 		break;
+	case "skill":
+		draw_sprite(sBattleMenuFinger, 0, oCombatAction.x+50, fingery);
+		draw_sprite(sprite_index, 1, oCombatAction.x+200, oCombatAction.y);
+		break;
 }

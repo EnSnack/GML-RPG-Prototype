@@ -73,4 +73,20 @@ if(active) {
 			nextTurn();
 		}
 	}
+	
+	if(state == "skill") {
+		if(keyboard_check_pressed(combat_inputs[1])) {
+			state = "idle";	
+		}
+		if(keyboard_check_pressed(combat_inputs[2]) && oCombatMenu.fingery > 300) {
+			oCombatMenu.fingery = oCombatMenu.fingery - 12;	
+		} else if(keyboard_check_pressed(combat_inputs[3]) && oCombatMenu.fingery < 480) {
+			oCombatMenu.fingery = oCombatMenu.fingery + 12;	
+		}
+		if (keyboard_check_pressed(combat_inputs[0])) {
+			curTarget.curHealth = curTarget.curHealth - curDamage;
+			io_clear();
+			nextTurn();
+		}
+	}
 }
