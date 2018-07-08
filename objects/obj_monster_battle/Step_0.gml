@@ -8,8 +8,11 @@ if (oCombatController.currentPlayerTurn == id) {
 if(active) {
 	curTarget =	ds_list_find_value(oCombatController.partyLeft, irandom(ds_list_size(oCombatController.partyLeft)-1));
 	if(curTarget.state != "dead") {
+		isDmgDealt = true;
+		dmgDealt = curDamage;
 		curTarget.curHealth = curTarget.curHealth - curDamage;
 	} else {
+		//REVIEW THIS
 		curTarget =	ds_list_find_value(oCombatController.partyLeft, irandom(ds_list_size(oCombatController.partyLeft)-1));
 	}
 	nextTurn();

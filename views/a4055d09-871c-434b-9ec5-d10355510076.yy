@@ -6,7 +6,8 @@
     "children": [
         "b6b9dd9a-405a-4c8a-9f02-958080390d57",
         "52abf7a7-3388-4b25-b1f5-3eb1375fffdd",
-        "a98db759-03c7-4712-adeb-5844ef1d74fd"
+        "a98db759-03c7-4712-adeb-5844ef1d74fd",
+        "f08b6bb2-4e08-41b7-adf8-73bbc6e9ffc5"
     ],
     "filterType": "GMObject",
     "folderName": "Battle",

@@ -2,7 +2,7 @@
     "id": "106be289-7a96-4adb-a1e8-5a0ebc33a3f3",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sprite_arrow",
+    "name": "sArrow",
     "For3D": false,
     "HTile": false,
     "VTile": false,
