@@ -23,4 +23,5 @@ team = 0;
 active = false;
 state = "idle";
 curTarget = 0;
+curSpell = 0;
 #endregion

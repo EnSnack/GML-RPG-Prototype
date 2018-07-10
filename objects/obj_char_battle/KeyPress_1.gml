@@ -62,15 +62,13 @@ if(active) {
 		}
 		if(keyboard_check_pressed(combat_inputs[2]) && oCombatMenu.fingery > 300) {
 			oCombatMenu.fingery = oCombatMenu.fingery - 12;	
-			show_debug_message(oCombatMenu.fingery);
+			curSpell--;
 		} else if(keyboard_check_pressed(combat_inputs[3]) && oCombatMenu.fingery < 480) {
 			oCombatMenu.fingery = oCombatMenu.fingery + 12;	
-			show_debug_message(oCombatMenu.fingery);
+			curSpell++;
 		}
-		if (keyboard_check_pressed(combat_inputs[0])) {
-			curTarget.curHealth = curTarget.curHealth - curDamage;
-			io_clear();
-			nextTurn();
+		if (keyboard_check_pressed(combat_inputs[0]) && curSpell < array_length_1d(curSpellsLearnt)) {
+			show_debug_message(curSpellsLearnt[curSpell]);
 		}
 	}
 	
@@ -79,14 +77,14 @@ if(active) {
 			state = "idle";	
 		}
 		if(keyboard_check_pressed(combat_inputs[2]) && oCombatMenu.fingery > 300) {
-			oCombatMenu.fingery = oCombatMenu.fingery - 12;	
+			oCombatMenu.fingery = oCombatMenu.fingery - 12;
+			curSpell--;
 		} else if(keyboard_check_pressed(combat_inputs[3]) && oCombatMenu.fingery < 480) {
-			oCombatMenu.fingery = oCombatMenu.fingery + 12;	
+			oCombatMenu.fingery = oCombatMenu.fingery + 12;
+			curSpell++;
 		}
 		if (keyboard_check_pressed(combat_inputs[0])) {
-			curTarget.curHealth = curTarget.curHealth - curDamage;
-			io_clear();
-			nextTurn();
+			show_debug_message(curSpellsLearnt[curSpell]);
 		}
 	}
 }
