@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "4ed1ed87-7891-46b9-a5bc-1d8e746102ae",
+            "Value": {
+                "id": "2de90f9e-e1ef-476a-8092-e4dd0cf90d0b",
+                "resourcePath": "sprites\\sBattleMenuBar\\sBattleMenuBar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4f05a4c9-c263-4336-a836-30965511d05c",
             "Value": {
                 "id": "a2575532-d4af-4743-8508-9d4d07658f2b",

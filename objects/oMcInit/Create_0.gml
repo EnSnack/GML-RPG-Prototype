@@ -3,4 +3,4 @@
 curHealth = 10;
 maxHealth = 10;
 curDamage = 2;
-curSpellsLearnt = 0;
+curSpellsLearnt = ["Fireball", "Heal"];

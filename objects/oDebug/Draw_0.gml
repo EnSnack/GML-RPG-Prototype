@@ -23,6 +23,10 @@ if(oGameInit.debugmode == 1) {
 		text += "2." + string(ds_list_find_value(oCombatController.partyRight, 1).curHealth) + "\n";
 		text += "3." + string(ds_list_find_value(oCombatController.partyRight, 2).curHealth) + "\n";
 		text += "Current Turn: " + string(object_get_name(oCombatController.currentPlayerTurn.object_index)) + "\n";
+		text += "A: " + string(oCombatMenu.fingerstart) + "\n";
+		text += "B: " + string(oCombatMenu.fingery) + "\n";
+		text += "C: " + string(oCombatMenu.fingerstart + (12 * 16)) + "\n";
+		text += "D: " + string(oCombatMenu.test) + "\n";
 	
 	draw_text(0,0,text);
 }

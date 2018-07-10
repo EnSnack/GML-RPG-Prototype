@@ -4,7 +4,9 @@
 curHealth = oMcInit.curHealth;
 maxHealth = oMcInit.maxHealth;
 curDamage = oMcInit.curDamage;
-curSpellsLearnt = oMcInit.curSpellsLearnt;
+for(i = 0; i < array_length_1d(oMcInit.curSpellsLearnt); i++) {
+	curSpellsLearnt[i] = oMcInit.curSpellsLearnt[i];
+}
 #endregion
 
 #region Combat Controls
