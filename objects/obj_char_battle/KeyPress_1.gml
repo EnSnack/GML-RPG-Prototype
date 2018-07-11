@@ -68,7 +68,7 @@ if(active) {
 			curSpell++;
 		}
 		if (keyboard_check_pressed(combat_inputs[0]) && curSpell < array_length_1d(curSpellsLearnt)) {
-			show_debug_message(curSpellsLearnt[curSpell]);
+			show_debug_message(castSpell("Fireball"));
 		}
 	}
 	

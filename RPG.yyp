@@ -87,10 +87,26 @@
             }
         },
         {
+            "Key": "11c1929e-09ed-4061-a288-f909c5431be6",
+            "Value": {
+                "id": "7ed3dfbd-0ee7-4072-a5f3-e6a6e35e1335",
+                "resourcePath": "views\\11c1929e-09ed-4061-a288-f909c5431be6.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "14a24138-76f3-4ccd-a8b8-bfa3812d1374",
             "Value": {
                 "id": "d4588ad8-d42e-44b8-b0d0-fd7c2bb3c934",
                 "resourcePath": "views\\14a24138-76f3-4ccd-a8b8-bfa3812d1374.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "16fd6e08-fb01-438b-82b4-318915c77cba",
+            "Value": {
+                "id": "2f15b358-8253-4329-aa3f-d67d4441a67d",
+                "resourcePath": "views\\16fd6e08-fb01-438b-82b4-318915c77cba.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -151,11 +167,27 @@
             }
         },
         {
+            "Key": "3c3b6c81-a1fc-49dc-b769-689f7c58f4f5",
+            "Value": {
+                "id": "3bc0d44d-2fd9-4da5-b596-7cf316015cb3",
+                "resourcePath": "scripts\\spellDB\\spellDB.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3cc8918d-3787-48b2-a682-e311bd76ed1b",
             "Value": {
                 "id": "4905a5c2-37b7-41ab-8a65-9b5881dcfb6a",
                 "resourcePath": "views\\3cc8918d-3787-48b2-a682-e311bd76ed1b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "410b2228-557b-4d1c-ad40-d0836a3afb34",
+            "Value": {
+                "id": "55edd277-6e79-4ae6-9c34-84fa81e0cfb8",
+                "resourcePath": "scripts\\castSpell\\castSpell.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -586,10 +618,12 @@
     "script_order": [
         "f9208de4-04d4-466f-990d-aa1f3fac3517",
         "65fe9998-552d-4fcf-8d18-fba54ab984bd",
+        "551e780b-3fa2-484f-92fc-31eef27112cd",
+        "345793ab-9042-4779-abcf-91749056ada9",
         "3984f757-c47f-40fc-b1e4-820d79b34f94",
         "0134753c-e230-4a9e-b4ce-fa91de50ee1a",
-        "345793ab-9042-4779-abcf-91749056ada9",
-        "551e780b-3fa2-484f-92fc-31eef27112cd",
+        "410b2228-557b-4d1c-ad40-d0836a3afb34",
+        "3c3b6c81-a1fc-49dc-b769-689f7c58f4f5",
         "8689f3fa-a126-4191-913c-b51f73b5656b"
     ],
     "tutorial": ""
