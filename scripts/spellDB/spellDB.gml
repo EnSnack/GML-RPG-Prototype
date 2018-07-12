@@ -1,45 +1,32 @@
-test[0] = "0";
-test[0].name = "Fireball";
-test[0].value = 2;
-test[0].effect = "Burn";
-test[0].effectVal = 1;
-test[0].target = 1;
+//INIT ARRAY VALUES
+//REVIEW THIS
+ID        = 0; //ID of spell
+NAME      = 1; //NAME of spell
+VALUE     = 2; //DAMAGE or HEAL value of spell
+EFFECT    = 3; //EFFECT of spell
+EFFECTVAL = 4; //VALUE of EFFECT of spell
+TARGET    = 5; //TARGET of spell, 0 = one ally, 1 = all allies, 2 = one enemy, 3 = all enemies, 4 = everyone
 
-test[1] = "1";
-test[1].name = "Heal";
-test[1].value = 2;
-test[1].effect = "";
-test[1].effectVal = 0;
-test[1].target = 0;
+test[0, ID]        = "0";
+test[0, NAME]      = "Fireball";
+test[0, VALUE]     = 2;
+test[0, EFFECT]    = "Burn";
+test[0, EFFECTVAL] = 1;
+test[0, TARGET]    = 1;
+
+test[1, ID]        = "1";
+test[1, NAME]      = "Heal";
+test[1, VALUE]     = 2;
+test[1, EFFECT]    = "";
+test[1, EFFECTVAL] = 0;
+test[1, TARGET]    = 0;
 
 var name = argument0;
-var column = argument1;
 
-/*switch(column) {
-	case "id":
-		column = 0;
-		break;
-	case "name":
-		column = 1;
-		break;
-	case "value":
-		column = 2;
-		break;
-	case "effect":
-		column = 3;
-		break;
-	case "effectVal":
-		column = 4;
-		break;
-}*/
-
-var foundVal = false;
-var val = noone;
 for (var i = 0; i < array_length_1d(test); i++) {
-	if(test[i].name == name) {
-		foundVal = true;
-		for(var j = 1; j < 5; j++) {
-			spellArray[j-1] = test[i];
+	if(test[i, NAME] == name) {
+		for(var j = 1; j < 6; j++) {
+			spellArray[j-1] = test[i, j];
 		}
 		break;
 	}
