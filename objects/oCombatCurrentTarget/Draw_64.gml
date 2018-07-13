@@ -14,35 +14,16 @@ if(currentPlayer.id == obj_char_battle.id || currentPlayer.id == oCompBattlePare
 	#region Spell Attack
 	if(currentPlayer.state == "magic" && currentTarget != 0) {
 		if(array_length_1d(currentPlayer.spellCast) > 0 && currentPlayer.curSpellSelected != 0) {
-			switch(currentPlayer.spellCast[4]) {
-				case 0:
+			if(currentPlayer.spellCast[5] == 0 || currentPlayer.spellCast[5] == 2) {
 					draw_sprite(sprite_index, 1, currentTarget.x, currentTarget.y-75);
 					draw_text(currentTarget.x-12, currentTarget.y-75, currentTarget.curHealth);
-					break;
-				case 1:
+			} else {
 					for(i = 0; i < array_length_1d(currentTarget); i++) {
 						draw_sprite(sprite_index, 1, currentTarget[i].x, currentTarget[i].y-75);
 						draw_text(currentTarget[i].x-12, currentTarget[i].y-75, currentTarget[i].curHealth);
 					}
-					break;
-				case 2:
-					draw_sprite(sprite_index, 1, currentTarget.x, currentTarget.y-75);
-					draw_text(currentTarget.x-12, currentTarget.y-75, currentTarget.curHealth);
-					break;
-				case 3:
-					for(i = 0; i < array_length_1d(currentTarget); i++) {
-						draw_sprite(sprite_index, 1, currentTarget[i].x, currentTarget[i].y-75);
-						draw_text(currentTarget[i].x-12, currentTarget[i].y-75, currentTarget[i].curHealth);
-					}
-					break;
-				case 4:
-					for(i = 0; i < array_length_1d(currentTarget); i++) {
-						draw_sprite(sprite_index, 1, currentTarget[i].x, currentTarget[i].y-75);
-						draw_text(currentTarget[i].x-12, currentTarget[i].y-75, currentTarget[i].curHealth);
-					}
-					break;
+				}
 			}
 		}
-	}
 	#endregion
 }

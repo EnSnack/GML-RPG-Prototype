@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if(mcActChoice == noone || compActChoice == noone) {
 	object_set_visible(self,true);
-	if(oCombatController.currentTeamTurn == 0 && obj_char_battle.state == "idle") {
+	if(oCombatController.currentTeamTurn == 0 && oCombatController.currentPlayerTurn.state == "idle") {
 		switch(actChoice) {
 			case 0:
 				draw_sprite(sArrow, 2, x-65, y-105);

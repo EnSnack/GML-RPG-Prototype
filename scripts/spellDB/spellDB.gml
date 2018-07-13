@@ -1,13 +1,20 @@
 //INIT ARRAY VALUES
 //REVIEW THIS
-ID        = 0; //ID of spell
-NAME      = 1; //NAME of spell
-VALUE     = 2; //DAMAGE or HEAL value of spell
-EFFECT    = 3; //EFFECT of spell
-EFFECTVAL = 4; //VALUE of EFFECT of spell
-TARGET    = 5; //TARGET of spell, 0 = one ally, 1 = all allies, 2 = one enemy, 3 = all enemies, 4 = everyone
+#region DATABASE VARIABLES
+VARAMM    = 7; //VARIABLES per spell
 
+ID        = 0; //ID of spell
+SPRITE    = 1; //SPRITE of spell
+NAME      = 2; //NAME of spell
+VALUE     = 3; //DAMAGE or HEAL value of spell
+EFFECT    = 4; //EFFECT of spell
+EFFECTVAL = 5; //VALUE of EFFECT of spell
+TARGET    = 6; //TARGET of spell, 0 = one ally, 1 = all allies, 2 = one enemy, 3 = all enemies, 4 = everyone
+#endregion
+
+#region DATABASE
 test[0, ID]        = "0";
+test[0, SPRITE]    = noone;
 test[0, NAME]      = "Fireball";
 test[0, VALUE]     = 2;
 test[0, EFFECT]    = "Burn";
@@ -15,6 +22,7 @@ test[0, EFFECTVAL] = 1;
 test[0, TARGET]    = 2;
 
 test[1, ID]        = "1";
+test[1, SPRITE]    = s_spHeal;
 test[1, NAME]      = "Heal";
 test[1, VALUE]     = 2;
 test[1, EFFECT]    = "";
@@ -22,6 +30,7 @@ test[1, EFFECTVAL] = 0;
 test[1, TARGET]    = 0;
 
 test[2, ID]        = "2";
+test[2, SPRITE]    = noone;
 test[2, NAME]      = "Flamestrike";
 test[2, VALUE]     = 4;
 test[2, EFFECT]    = "";
@@ -29,6 +38,7 @@ test[2, EFFECTVAL] = 0;
 test[2, TARGET]    = 3;
 
 test[3, ID]        = "3";
+test[3, SPRITE]    = noone;
 test[3, NAME]      = "Ralley";
 test[3, VALUE]     = 0;
 test[3, EFFECT]    = "Damage Bonus";
@@ -36,19 +46,22 @@ test[3, EFFECTVAL] = 2;
 test[3, TARGET]    = 1;
 
 test[4, ID]        = "4";
+test[4, SPRITE]    = noone;
 test[4, NAME]      = "Meteor";
 test[4, VALUE]     = 5;
 test[4, EFFECT]    = "";
 test[4, EFFECTVAL] = 0;
 test[4, TARGET]    = 4;
+#endregion
 
 var name = argument0;
-var get = argument1; //USE 0 FOR GET ALL
+var get  = argument1; //USE 0 FOR GET ALL
 
+#region Get Database values
 if(get == 0) {
 	for (var i = 0; i < array_length_1d(test); i++) {
 		if(test[i, NAME] == name) {
-			for(var j = 1; j < 6; j++) {
+			for(var j = 1; j < VARAMM; j++) {
 				spellArray[j-1] = test[i, j];
 			}
 			return spellArray;
@@ -64,3 +77,4 @@ if(get == 0) {
 		}
 	}
 }
+#endregion

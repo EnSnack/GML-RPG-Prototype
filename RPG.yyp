@@ -287,6 +287,14 @@
             }
         },
         {
+            "Key": "5a754bcb-1b16-4bcb-8fc9-b77a6e159806",
+            "Value": {
+                "id": "22b189fc-9051-48cb-901a-8c2c84633f91",
+                "resourcePath": "views\\5a754bcb-1b16-4bcb-8fc9-b77a6e159806.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "5a9bed20-cfa8-4b33-a98c-bfedb2d3ae56",
             "Value": {
                 "id": "3ef487eb-f223-4205-b8f6-63b758e17f34",
@@ -404,6 +412,14 @@
                 "id": "fbcc172a-4784-4d24-8a9c-fd57e06869da",
                 "resourcePath": "objects\\obj_monster_battle\\obj_monster_battle.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "91cecb26-09a3-41f8-a0f3-f26d1622fe51",
+            "Value": {
+                "id": "4fe7a40e-f650-4da5-9904-d980a430a34c",
+                "resourcePath": "sprites\\s_spHeal\\s_spHeal.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -612,6 +628,14 @@
                 "id": "43e3ede9-9e0e-493b-953c-c945c7ab115b",
                 "resourcePath": "scripts\\move\\move.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "fe87540d-8900-42e7-9e09-3bbd9c482f46",
+            "Value": {
+                "id": "7954c2fd-1e00-4bd0-b8ae-37db21eee7ff",
+                "resourcePath": "objects\\oSpellController\\oSpellController.yy",
+                "resourceType": "GMObject"
             }
         }
     ],
