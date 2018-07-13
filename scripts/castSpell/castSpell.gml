@@ -12,6 +12,6 @@ This >MIGHT< be coded in now, just in case.
 var name = argument0;
 //var level = argument1;
 
-spellDB(name);
+spellDB(name, 0);
 show_debug_message(spellArray);
 

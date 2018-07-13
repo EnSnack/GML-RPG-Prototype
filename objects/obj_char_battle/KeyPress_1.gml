@@ -21,12 +21,10 @@ if(active) {
 					break;
 				case 1:
 					state = "magic";
-					curTarget = ds_list_find_value(oCombatController.partyRight, 0);
 					io_clear();
 					break;
 				case 2:
 					state = "skill";
-					curTarget = ds_list_find_value(oCombatController.partyRight, 0);
 					io_clear();
 					break;
 				case 3:
@@ -60,6 +58,10 @@ if(active) {
 		if(keyboard_check_pressed(combat_inputs[1])) {
 			state = "idle";	
 		}
+		if(keyboard_check_pressed(combat_inputs[1]) && curSpellSelected != 0) {
+			state = "magic";
+			curSpellSelected = 0;
+		}
 		if(keyboard_check_pressed(combat_inputs[2]) && oCombatMenu.fingery > 300) {
 			oCombatMenu.fingery = oCombatMenu.fingery - 12;	
 			curSpell--;
@@ -68,23 +70,18 @@ if(active) {
 			curSpell++;
 		}
 		if (keyboard_check_pressed(combat_inputs[0]) && curSpell < array_length_1d(curSpellsLearnt)) {
-			show_debug_message(castSpell("Fireball"));
-		}
-	}
-	
-	if(state == "skill") {
-		if(keyboard_check_pressed(combat_inputs[1])) {
-			state = "idle";	
-		}
-		if(keyboard_check_pressed(combat_inputs[2]) && oCombatMenu.fingery > 300) {
-			oCombatMenu.fingery = oCombatMenu.fingery - 12;
-			curSpell--;
-		} else if(keyboard_check_pressed(combat_inputs[3]) && oCombatMenu.fingery < 480) {
-			oCombatMenu.fingery = oCombatMenu.fingery + 12;
-			curSpell++;
-		}
-		if (keyboard_check_pressed(combat_inputs[0])) {
-			show_debug_message(curSpellsLearnt[curSpell]);
+			curSpellSelected = curSpell+1;
+			spellCast = spellDB(curSpellsLearnt[curSpellSelected-1], 0);
+			switch(spellCast[4]) {
+				case 0:
+					curTarget = ds_list_find_value(oCombatController.partyLeft, 0);
+					break;
+				case 2:
+					show_debug_message(spellCast[4]);
+					curTarget = ds_list_find_value(oCombatController.partyRight, 0);
+					show_debug_message(curTarget);					
+					break;
+			}
 		}
 	}
 }

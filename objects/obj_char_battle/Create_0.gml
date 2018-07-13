@@ -24,4 +24,5 @@ active = false;
 state = "idle";
 curTarget = 0;
 curSpell = 0;
+curSpellSelected = 0;
 #endregion

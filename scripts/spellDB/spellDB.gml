@@ -12,7 +12,7 @@ test[0, NAME]      = "Fireball";
 test[0, VALUE]     = 2;
 test[0, EFFECT]    = "Burn";
 test[0, EFFECTVAL] = 1;
-test[0, TARGET]    = 1;
+test[0, TARGET]    = 2;
 
 test[1, ID]        = "1";
 test[1, NAME]      = "Heal";
@@ -22,14 +22,24 @@ test[1, EFFECTVAL] = 0;
 test[1, TARGET]    = 0;
 
 var name = argument0;
+var get = argument1; //USE 0 FOR GET ALL
 
-for (var i = 0; i < array_length_1d(test); i++) {
-	if(test[i, NAME] == name) {
-		for(var j = 1; j < 6; j++) {
-			spellArray[j-1] = test[i, j];
+if(get == 0) {
+	for (var i = 0; i < array_length_1d(test); i++) {
+		if(test[i, NAME] == name) {
+			for(var j = 1; j < 6; j++) {
+				spellArray[j-1] = test[i, j];
+			}
+			return spellArray;
+			break;
 		}
-		break;
+	}
+} else {
+	for (var i = 0; i < array_length_1d(test); i++) {
+		if(test[i, NAME] == name) {
+			getValue = test[i, get];
+			return getValue;
+			break;
+		}
 	}
 }
-
-return spellArray;
