@@ -20,12 +20,26 @@ if(currentPlayer.id == obj_char_battle.id || currentPlayer.id == oCompBattlePare
 					draw_text(currentTarget.x-12, currentTarget.y-75, currentTarget.curHealth);
 					break;
 				case 1:
-					draw_sprite(sprite_index, 1, currentTarget.x, currentTarget.y-75);
-					draw_text(currentTarget.x-12, currentTarget.y-75, currentTarget.curHealth);
+					for(i = 0; i < array_length_1d(currentTarget); i++) {
+						draw_sprite(sprite_index, 1, currentTarget[i].x, currentTarget[i].y-75);
+						draw_text(currentTarget[i].x-12, currentTarget[i].y-75, currentTarget[i].curHealth);
+					}
 					break;
 				case 2:
 					draw_sprite(sprite_index, 1, currentTarget.x, currentTarget.y-75);
 					draw_text(currentTarget.x-12, currentTarget.y-75, currentTarget.curHealth);
+					break;
+				case 3:
+					for(i = 0; i < array_length_1d(currentTarget); i++) {
+						draw_sprite(sprite_index, 1, currentTarget[i].x, currentTarget[i].y-75);
+						draw_text(currentTarget[i].x-12, currentTarget[i].y-75, currentTarget[i].curHealth);
+					}
+					break;
+				case 4:
+					for(i = 0; i < array_length_1d(currentTarget); i++) {
+						draw_sprite(sprite_index, 1, currentTarget[i].x, currentTarget[i].y-75);
+						draw_text(currentTarget[i].x-12, currentTarget[i].y-75, currentTarget[i].curHealth);
+					}
 					break;
 			}
 		}

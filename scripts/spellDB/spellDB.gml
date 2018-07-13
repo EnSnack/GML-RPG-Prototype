@@ -21,6 +21,27 @@ test[1, EFFECT]    = "";
 test[1, EFFECTVAL] = 0;
 test[1, TARGET]    = 0;
 
+test[2, ID]        = "2";
+test[2, NAME]      = "Flamestrike";
+test[2, VALUE]     = 4;
+test[2, EFFECT]    = "";
+test[2, EFFECTVAL] = 0;
+test[2, TARGET]    = 3;
+
+test[3, ID]        = "3";
+test[3, NAME]      = "Ralley";
+test[3, VALUE]     = 0;
+test[3, EFFECT]    = "Damage Bonus";
+test[3, EFFECTVAL] = 2;
+test[3, TARGET]    = 1;
+
+test[4, ID]        = "4";
+test[4, NAME]      = "Meteor";
+test[4, VALUE]     = 5;
+test[4, EFFECT]    = "";
+test[4, EFFECTVAL] = 0;
+test[4, TARGET]    = 4;
+
 var name = argument0;
 var get = argument1; //USE 0 FOR GET ALL
 

@@ -26,3 +26,8 @@ curTarget = 0;
 curSpell = 0;
 curSpellSelected = 0;
 #endregion
+
+#region EasyUseVariables
+leftParty = oCombatController.partyLeft;
+rightParty = oCombatController.partyRight;
+#endregion
