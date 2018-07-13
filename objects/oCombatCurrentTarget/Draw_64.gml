@@ -14,7 +14,7 @@ if(currentPlayer.id == obj_char_battle.id || currentPlayer.id == oCompBattlePare
 	#region Spell Attack
 	if(currentPlayer.state == "magic" && currentTarget != 0) {
 		if(array_length_1d(currentPlayer.spellCast) > 0 && currentPlayer.curSpellSelected != 0) {
-			if(currentPlayer.spellCast[5] == 0 || currentPlayer.spellCast[5] == 2) {
+			if(currentPlayer.spellCast[currentPlayer.TARGET-1] == 0 || currentPlayer.spellCast[currentPlayer.TARGET-1] == 2) {
 					draw_sprite(sprite_index, 1, currentTarget.x, currentTarget.y-75);
 					draw_text(currentTarget.x-12, currentTarget.y-75, currentTarget.curHealth);
 			} else {

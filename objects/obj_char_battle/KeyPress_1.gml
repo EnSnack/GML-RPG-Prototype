@@ -12,7 +12,6 @@ if(active) {
 		} else if(keyboard_check_pressed(combat_inputs[5]) && oCombatAction.actChoice == 3) {
 			oCombatAction.actChoice = 0;	
 		}
-
 		if (keyboard_check_pressed(combat_inputs[0])) {
 			switch(oCombatAction.actChoice) {
 				case 0:
@@ -52,8 +51,7 @@ if(active) {
 		}
 		if (keyboard_check_pressed(combat_inputs[0])) {
 			curTarget.curHealth = curTarget.curHealth - curDamage;
-			io_clear();
-			nextTurn();
+			state = "end";
 		}
 	}
 	#endregion
@@ -70,6 +68,7 @@ if(active) {
 		}
 		if (keyboard_check_pressed(combat_inputs[0]) && curSpellSelected != 0) {
 			instance_create_layer(0,0,"Technical",oSpellController);
+			state = "end";
 		}
 		if(curSpellSelected == 0) {
 			if(keyboard_check_pressed(combat_inputs[2]) && oCombatMenu.fingery > 300) {
@@ -129,5 +128,19 @@ if(active) {
 			}
 		}
 	}
+	#endregion
+	
+	#region End State
+		if(state == "end") {
+			oCombatAction.mcActChoice = 0;
+			oCombatAction.actChoice = 0;
+			curTarget = 0;
+			curSpell = 0;
+			curSpellSelected = 0;
+			spellCast = 0;
+			oCombatMenu.fingery = 300;
+			io_clear();
+			nextTurn();
+		}
 	#endregion
 }

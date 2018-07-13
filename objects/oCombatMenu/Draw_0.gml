@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-switch(obj_char_battle.state) {
+switch(oCombatController.currentPlayerTurn.state) {
 	case "magic":
 		if(oCombatController.currentPlayerTurn.curSpellSelected == 0) {
 			draw_sprite(sBattleMenuFinger, 0, oCombatAction.x+50, fingery);

@@ -3,11 +3,16 @@
 var spellCast = oCombatController.currentPlayerTurn.spellCast;
 spSprite = spellCast[0];
 spName = spellCast[1];
-spVal = spellCast[2];
-spEffect = spellCast[3];
-spEffectVal = spellCast[4];
-spTarget = spellCast[5];
+spAttr = spellCast[2]
+spVal = spellCast[3];
+spEffect = spellCast[4];
+spEffectAttr = spellCast[5];
+spEffectVal = spellCast[6];
+spTarget = spellCast[7];
 image_speed = 0.3;
 
-x = oCombatController.currentPlayerTurn.curTarget.x;
-y = oCombatController.currentPlayerTurn.curTarget.y;
+target = oCombatController.currentPlayerTurn.curTarget;
+done = false;
+
+x = target.x;
+y = target.y;
