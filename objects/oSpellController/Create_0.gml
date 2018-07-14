@@ -14,5 +14,7 @@ image_speed = 0.3;
 target = oCombatController.currentPlayerTurn.curTarget;
 done = false;
 
+if(spTarget == 0 || spTarget == 2) {
 x = target.x;
 y = target.y;
+}

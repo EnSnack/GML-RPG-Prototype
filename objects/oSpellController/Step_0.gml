@@ -3,8 +3,18 @@
 if(!done) {
 	switch(spAttr) {
 		case "heal":
-			show_debug_message(target);
-			target.curHealth += 2;
+			if(target.curHealth < target.maxHealth) {
+				if(target.curHealth + spVal > target.maxHealth) {
+					target.curHealth = target.maxHealth;	
+				} else {
+					if(target.curHealth > 0) {
+						target.curHealth += spVal;
+					}
+				}
+			}
+			break;
+		case "dmg":
+			target.curHealth -= spVal;
 			break;
 	}
 	done = !done;
