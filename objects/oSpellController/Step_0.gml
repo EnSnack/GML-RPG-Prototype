@@ -12,6 +12,7 @@ if(!done) {
 					}
 				}
 			}
+			player.curMana -= spMp;
 			break;
 		case "dmg":
 			target.curHealth -= spVal;

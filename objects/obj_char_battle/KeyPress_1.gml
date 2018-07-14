@@ -59,7 +59,7 @@ if(active) {
 	#region Magic State
 	if(state == "magic") {
 		if(keyboard_check_pressed(combat_inputs[1])) {
-			state = "idle";	
+			state = "idle";;
 		}
 		if(keyboard_check_pressed(combat_inputs[1]) && curSpellSelected != 0) {
 			state = "magic";
@@ -100,31 +100,35 @@ if(active) {
 			curSpellSelected = curSpell+1;
 			spellCast = spellDB(curSpellsLearnt[curSpellSelected-1], 0);
 			io_clear();
-			switch(spellCast[TARGET-1]) {
-				case 0:
-					curTarget = ds_list_find_value(leftParty, 0);
-					break;
-				case 1:
-					for(i = 0; i < ds_list_size(leftParty); i++) {
-						curTarget[i] = ds_list_find_value(leftParty, i);
-					}
-					break;
-				case 2:
-					curTarget = ds_list_find_value(rightParty, 0);				
-					break;
-				case 3:
-					for(i = 0; i < ds_list_size(rightParty); i++) {
-						curTarget[i] = ds_list_find_value(rightParty, i);
-					}
-					break;
-				case 4:
-					for(i = 0; i < ds_list_size(leftParty); i++) {
-						curTarget[i] = ds_list_find_value(leftParty, i);
-					}
-					for(i = ds_list_size(leftParty); i < ds_list_size(leftParty)+ds_list_size(rightParty); i++) {
-						curTarget[i] = ds_list_find_value(rightParty, (i+1)-ds_list_size(rightParty));
-					}
-					break;
+			if(curMana >= spellCast[MPCOST-1]) {
+				switch(spellCast[TARGET-1]) {
+					case 0:
+						curTarget = ds_list_find_value(leftParty, 0);
+						break;
+					case 1:
+						for(i = 0; i < ds_list_size(leftParty); i++) {
+							curTarget[i] = ds_list_find_value(leftParty, i);
+						}
+						break;
+					case 2:
+						curTarget = ds_list_find_value(rightParty, 0);				
+						break;
+					case 3:
+						for(i = 0; i < ds_list_size(rightParty); i++) {
+							curTarget[i] = ds_list_find_value(rightParty, i);
+						}
+						break;
+					case 4:
+						for(i = 0; i < ds_list_size(leftParty); i++) {
+							curTarget[i] = ds_list_find_value(leftParty, i);
+						}
+						for(i = ds_list_size(leftParty); i < ds_list_size(leftParty)+ds_list_size(rightParty); i++) {
+							curTarget[i] = ds_list_find_value(rightParty, (i+1)-ds_list_size(rightParty));
+						}
+						break;
+				}
+			} else {
+				curSpellSelected = 0;	
 			}
 		}
 	}

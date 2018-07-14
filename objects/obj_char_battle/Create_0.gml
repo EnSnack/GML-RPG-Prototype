@@ -3,6 +3,8 @@
 #region Combat Stats
 curHealth = oMcInit.curHealth;
 maxHealth = oMcInit.maxHealth;
+curMana   = oMcInit.curMana;
+maxMana   = oMcInit.maxMana;
 curDamage = oMcInit.curDamage;
 for(i = 0; i < array_length_1d(oMcInit.curSpellsLearnt); i++) {
 	curSpellsLearnt[i] = oMcInit.curSpellsLearnt[i];

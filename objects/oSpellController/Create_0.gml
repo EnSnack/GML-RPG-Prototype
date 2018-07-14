@@ -5,12 +5,14 @@ spSprite = spellCast[0];
 spName = spellCast[1];
 spAttr = spellCast[2]
 spVal = spellCast[3];
-spEffect = spellCast[4];
-spEffectAttr = spellCast[5];
-spEffectVal = spellCast[6];
-spTarget = spellCast[7];
+spMp = spellCast[4];
+spEffect = spellCast[5];
+spEffectAttr = spellCast[6];
+spEffectVal = spellCast[7];
+spTarget = spellCast[8];
 image_speed = 0.3;
 
+player = oCombatController.currentPlayerTurn;
 target = oCombatController.currentPlayerTurn.curTarget;
 done = false;
 
