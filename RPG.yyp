@@ -343,14 +343,6 @@
             }
         },
         {
-            "Key": "6fa663f2-9f8f-479b-9cfb-9d8e05b8f715",
-            "Value": {
-                "id": "89abc1ed-70e4-44bc-9fed-aea4e4219a31",
-                "resourcePath": "sprites\\s_spFireball1\\s_spFireball1.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "7118d7ee-62d0-49f7-938a-356ef204af56",
             "Value": {
                 "id": "80252f9d-b94e-4711-9faf-1f15fa1e2b5b",

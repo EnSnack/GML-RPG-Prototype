@@ -20,6 +20,9 @@ done = false;
 if(spTrail == "missile") {
 missilex = player.x;
 missiley = player.y;
+missilespeedx = 10;
+missilespeedy = (target.y - player.y) / (target.x - player.x) * missilespeedx;
+rotation = point_direction(player.x, player.y, target.x, target.y);
 }
 
 if(spTarget == 0 || spTarget == 2) {
