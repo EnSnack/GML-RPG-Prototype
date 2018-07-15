@@ -18,7 +18,7 @@ TRAILTYPE  = 10; //TYPE of TRAIL of spell, "missile" from X to Y, "mine" straigh
 
 #region DATABASE
 test[0, ID]         = "0";
-test[0, SPRITE]     = noone;
+test[0, SPRITE]     = s_spFireball;
 test[0, NAME]       = "Fireball";
 test[0, ATTR]       = "dmg";
 test[0, VALUE]      = 2;

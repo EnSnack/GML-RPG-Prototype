@@ -21,6 +21,7 @@ if(active) {
 					break;
 				case 1:
 					state = "magic";
+					instance_create_layer(x,y,"Technical",oCombatMenu)
 					io_clear();
 					break;
 				case 2:
@@ -58,27 +59,17 @@ if(active) {
 	
 	#region Magic State
 	if(state == "magic") {
-		if(keyboard_check_pressed(combat_inputs[1])) {
-			state = "idle";;
-		}
-		if(keyboard_check_pressed(combat_inputs[1]) && curSpellSelected != 0) {
+		if(keyboard_check_pressed(combat_inputs[1]) && curMagicSelected != 0) {
 			state = "magic";
-			curSpellSelected = 0;
+			curMagicSelected = 0;
 			curTarget = 0;
+			io_clear();
 		}
-		if (keyboard_check_pressed(combat_inputs[0]) && curSpellSelected != 0) {
+		if (keyboard_check_pressed(combat_inputs[0]) && curMagicSelected != 0) {
 			instance_create_layer(0,0,"Technical",oSpellController);
 			state = "end";
 		}
-		if(curSpellSelected == 0) {
-			if(keyboard_check_pressed(combat_inputs[2]) && oCombatMenu.fingery > 300) {
-				oCombatMenu.fingery = oCombatMenu.fingery - 12;	
-				curSpell--;
-			} else if(keyboard_check_pressed(combat_inputs[3]) && oCombatMenu.fingery < 480) {
-				oCombatMenu.fingery = oCombatMenu.fingery + 12;	
-				curSpell++;
-			}
-		} else {
+		if(curMagicSelected != 0) {
 			switch(spellCast[TARGET-1]) {
 				case 0:
 					if(keyboard_check_pressed(combat_inputs[2]) && curTarget > ds_list_find_value(leftParty, 0)) {
@@ -96,9 +87,9 @@ if(active) {
 					break;
 			}
 		}
-		if (keyboard_check_pressed(combat_inputs[0]) && curSpell < array_length_1d(curSpellsLearnt) && curSpellSelected == 0) {
-			curSpellSelected = curSpell+1;
-			spellCast = spellDB(curSpellsLearnt[curSpellSelected-1], 0);
+		if (keyboard_check_pressed(combat_inputs[0]) && curSpell < array_length_1d(curSpellsLearnt) && curMagicSelected == 0) {
+			curMagicSelected = curSpell+1;
+			spellCast = spellDB(curSpellsLearnt[curMagicSelected-1], 0);
 			io_clear();
 			if(curMana >= spellCast[MPCOST-1]) {
 				switch(spellCast[TARGET-1]) {
@@ -128,10 +119,16 @@ if(active) {
 						break;
 				}
 			} else {
-				curSpellSelected = 0;	
+				curMagicSelected = 0;	
 			}
 		}
 	}
+	#endregion
+	
+	#region Summon State
+	#endregion
+	
+	#region Skill State
 	#endregion
 	
 	#region End State
@@ -140,7 +137,7 @@ if(active) {
 			oCombatAction.actChoice = 0;
 			curTarget = 0;
 			curSpell = 0;
-			curSpellSelected = 0;
+			curMagicSelected = 0;
 			spellCast = 0;
 			oCombatMenu.fingery = 300;
 			io_clear();

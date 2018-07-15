@@ -17,9 +17,9 @@ if(mcActChoice == noone || compActChoice == noone) {
 				draw_sprite(sArrow, 2, x+55, y-105);
 				break;
 		}
-		draw_sprite(sprite_index, 0, x-80, y-75);
-		draw_sprite(sprite_index, 1, x-40, y-75);
-		draw_sprite(sprite_index, 2, x, y-75);
-		draw_sprite(sprite_index, 3, x+40, y-75);
+		draw_sprite(sprite_index, 0, x-65, y-60);
+		draw_sprite(sprite_index, 1, x-25, y-60);
+		draw_sprite(sprite_index, 2, x+15, y-60);
+		draw_sprite(sprite_index, 3, x+55, y-60);
 	}
 }

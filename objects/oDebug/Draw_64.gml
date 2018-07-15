@@ -19,7 +19,7 @@ if(oGameInit.debugmode == 1) {
 		text += "1: " + string(ds_list_find_value(oCombatController.partyRight, 0).curHealth) + "\n";
 		text += "2: " + string(ds_list_find_value(oCombatController.partyRight, 1).curHealth) + "\n";
 		text += "3: " + string(ds_list_find_value(oCombatController.partyRight, 2).curHealth) + "\n";
-		text += "Current Spell: " + string(oCombatController.currentPlayerTurn.curSpellSelected) + "\n";
+		text += "Current Team Turn: " + string(oCombatController.currentTeamTurn) + "\n";
 	
 	draw_text(0,0,text);
 }

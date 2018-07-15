@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "6fa663f2-9f8f-479b-9cfb-9d8e05b8f715",
+            "Value": {
+                "id": "89abc1ed-70e4-44bc-9fed-aea4e4219a31",
+                "resourcePath": "sprites\\s_spFireball1\\s_spFireball1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7118d7ee-62d0-49f7-938a-356ef204af56",
             "Value": {
                 "id": "80252f9d-b94e-4711-9faf-1f15fa1e2b5b",
@@ -484,6 +492,14 @@
                 "id": "686f7cd5-62f8-40d4-a501-5f620c4f05c9",
                 "resourcePath": "views\\a98db759-03c7-4712-adeb-5844ef1d74fd.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ab725924-8ed9-4c0f-a46d-a9822d43fc2c",
+            "Value": {
+                "id": "27952243-1078-4c9a-8712-db54a38c3e6a",
+                "resourcePath": "sprites\\s_spFireball\\s_spFireball.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

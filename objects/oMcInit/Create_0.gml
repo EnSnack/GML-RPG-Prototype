@@ -6,3 +6,5 @@ curDamage = 2;
 curMana = 10;
 maxMana = 10;
 curSpellsLearnt = ["Fireball", "Heal", "Flamestrike", "Ralley", "Meteor"];
+curSummonsLearnt = [];
+curSkillsLearnt = [];

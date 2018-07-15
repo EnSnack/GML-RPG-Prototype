@@ -1,13 +1,22 @@
 /// @description Insert description here
 // You can write your code in this editor
 #region Combat Stats
-curHealth = oMcInit.curHealth;
-maxHealth = oMcInit.maxHealth;
-curMana   = oMcInit.curMana;
-maxMana   = oMcInit.maxMana;
-curDamage = oMcInit.curDamage;
+curHealth        = oMcInit.curHealth;
+maxHealth        = oMcInit.maxHealth;
+curMana          = oMcInit.curMana;
+maxMana          = oMcInit.maxMana;
+curDamage        = oMcInit.curDamage;
+curSpellsLearnt  = array_create(0);
+curSummonsLearnt = array_create(0);
+curSkillsLearnt  = array_create(0);
 for(i = 0; i < array_length_1d(oMcInit.curSpellsLearnt); i++) {
 	curSpellsLearnt[i] = oMcInit.curSpellsLearnt[i];
+}
+for(i = 0; i < array_length_1d(oMcInit.curSummonsLearnt); i++) {
+	curSummonsLearnt[i] = oMcInit.curSummonsLearnt[i];
+}
+for(i = 0; i < array_length_1d(oMcInit.curSkillsLearnt); i++) {
+	curSkillsLearnt[i] = oMcInit.curSkillsLearnt[i];
 }
 #endregion
 
@@ -26,7 +35,7 @@ active = false;
 state = "idle";
 curTarget = 0;
 curSpell = 0;
-curSpellSelected = 0;
+curMagicSelected = 0;
 #endregion
 
 #region EasyUseVariables
