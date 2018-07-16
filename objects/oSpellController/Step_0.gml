@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(!done) {
+	show_debug_message(spEffect);
 	switch(spAttr) {
 		case "heal":
 			if(target.curHealth < target.maxHealth) {
@@ -11,6 +12,9 @@ if(!done) {
 						target.curHealth += spVal;
 					}
 				}
+			}
+			if(spEffect != noone) {
+				target.curBuffs[array_length_1d(target.curBuffs)] = spEffect;	
 			}
 			break;
 		case "dmg":

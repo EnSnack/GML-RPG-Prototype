@@ -35,9 +35,9 @@ spell[1, NAME]       = "Heal";
 spell[1, ATTR]       = "heal";
 spell[1, VALUE]      = 2;
 spell[1, MPCOST]     = 2;
-spell[1, EFFECT]     = noone;
-spell[1, EFFECTATTR] = noone;
-spell[1, EFFECTVAL]  = 0;
+spell[1, EFFECT]     = "hot";
+spell[1, EFFECTATTR] = "buff";
+spell[1, EFFECTVAL]  = 1;
 spell[1, TARGET]     = 0;
 spell[1, TRAILTYPE]  = "mine";
 

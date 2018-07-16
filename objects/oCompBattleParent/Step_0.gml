@@ -115,13 +115,11 @@ if(active) {
 						curTarget = ds_list_find_value(rightParty, 0);				
 						break;
 					case 3:
-						show_debug_message(ds_list_size(rightParty));
 						if(ds_list_size(rightParty) > 1) {
 							for(i = 0; i < ds_list_size(rightParty); i++) {
 								curTarget[i] = ds_list_find_value(rightParty, i);
 							}
 						} else {
-							show_debug_message(ds_list_find_value(rightParty, 0));
 							curTarget = ds_list_find_value(rightParty, 0);							
 						}
 						break;

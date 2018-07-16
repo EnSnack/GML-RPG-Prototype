@@ -74,6 +74,7 @@ if(active) {
 			state = "magic";
 			curMagicSelected = 0;
 			curTarget = 0;
+			spellCast = noone;
 			io_clear();
 		}
 		if (keyboard_check_pressed(combat_inputs[0]) && curMagicSelected != 0) {
@@ -115,13 +116,11 @@ if(active) {
 						curTarget = ds_list_find_value(rightParty, 0);				
 						break;
 					case 3:
-						show_debug_message(ds_list_size(rightParty));
 						if(ds_list_size(rightParty) > 1) {
 							for(i = 0; i < ds_list_size(rightParty); i++) {
 								curTarget[i] = ds_list_find_value(rightParty, i);
 							}
 						} else {
-							show_debug_message(ds_list_find_value(rightParty, 0));
 							curTarget = ds_list_find_value(rightParty, 0);							
 						}
 						break;
