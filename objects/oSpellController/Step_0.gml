@@ -24,8 +24,8 @@ if(!done) {
 			}
 			break;
 	}
-	if(spEffect != "") {
-		show_debug_message(spEffect);
+	if(spEffect != noone) {
+		
 	}
 	player.curMana -= spMp;
 	done = !done;
