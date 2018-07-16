@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(active) {
+/*if(active) {
 	#region Idle State
 	if(state == "idle") {
 		if(keyboard_check_pressed(combat_inputs[4]) && oCombatAction.actChoice > 0) {
@@ -140,8 +140,6 @@ if(active) {
 	
 	#region End State
 		if(state == "end") {
-			oCombatAction.mcActChoice = 0;
-			oCombatAction.actChoice = 0;
 			curTarget = 0;
 			curSpell = 0;
 			curMagicSelected = 0;

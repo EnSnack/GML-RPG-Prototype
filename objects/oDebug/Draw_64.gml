@@ -19,7 +19,10 @@ if(oGameInit.debugmode == 1) {
 		text += "1: " + string(ds_list_find_value(oCombatController.partyRight, 0).curHealth) + "\n";
 		text += "2: " + string(ds_list_find_value(oCombatController.partyRight, 1).curHealth) + "\n";
 		text += "3: " + string(ds_list_find_value(oCombatController.partyRight, 2).curHealth) + "\n";
-		text += "Current Team Turn: " + string(oCombatController.currentTeamTurn) + "\n";
+		text += "Current Team Turn: " + string(oCombatController.currentPlayerTurn) + "\n";
+		text += "atcive?: " + string(oCombatController.currentPlayerTurn.active) + "\n";
+		text += "Player Status: " + string(obj_char_battle.state) + "\n";
+		text += "Companion status: " + string(obj_comp_battle.state) + "\n";
 	
 	draw_text(0,0,text);
 }
