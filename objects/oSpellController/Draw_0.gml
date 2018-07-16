@@ -2,8 +2,16 @@
 // You can write your code in this editor
 if(spSprite != noone) {
 	if(spTrail == "mine") {
-		draw_sprite(spSprite, image_index, target.x, target.y);
-		draw_text(x-6, y-11, spVal);
+		if(array_length_1d(target) > 1) {
+			for(i = 0; i < array_length_1d(target); i++) {
+				draw_sprite(spSprite, image_index, target[i].x, target[i].y);
+				draw_text(x-6, y-11, spVal);
+			}
+		}
+		else {
+			draw_sprite(spSprite, image_index, target.x, target.y);
+			draw_text(x-6, y-11, spVal);
+		}
 	}
 	if(spTrail == "missile") {
 		draw_sprite_ext(spSprite,image_index,missilex,missiley,1,1,rotation,c_white,1);
@@ -25,5 +33,6 @@ if(spSprite != noone) {
 }
 
 if (image_index+image_speed >= sprite_get_number(spSprite)) {
+	player.state = "end";
 	instance_destroy();
 }

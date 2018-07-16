@@ -16,6 +16,7 @@ if(active) {
 			switch(oCombatAction.actChoice) {
 				case 0:
 					state = "attack";
+					instance_create_layer(0,0,"Technical",oCombatCurrentTarget);
 					curTarget = ds_list_find_value(rightParty, 0);
 					io_clear();
 					break;
@@ -67,7 +68,6 @@ if(active) {
 		}
 		if (keyboard_check_pressed(combat_inputs[0]) && curMagicSelected != 0) {
 			instance_create_layer(0,0,"Technical",oSpellController);
-			state = "end";
 		}
 		if(curMagicSelected != 0) {
 			switch(spellCast[TARGET-1]) {
@@ -105,8 +105,14 @@ if(active) {
 						curTarget = ds_list_find_value(rightParty, 0);				
 						break;
 					case 3:
-						for(i = 0; i < ds_list_size(rightParty); i++) {
-							curTarget[i] = ds_list_find_value(rightParty, i);
+						show_debug_message(ds_list_size(rightParty));
+						if(ds_list_size(rightParty) > 1) {
+							for(i = 0; i < ds_list_size(rightParty); i++) {
+								curTarget[i] = ds_list_find_value(rightParty, i);
+							}
+						} else {
+							show_debug_message(ds_list_find_value(rightParty, 0));
+							curTarget = ds_list_find_value(rightParty, 0);							
 						}
 						break;
 					case 4:
@@ -139,7 +145,6 @@ if(active) {
 			curSpell = 0;
 			curMagicSelected = 0;
 			spellCast = 0;
-			oCombatMenu.fingery = 300;
 			io_clear();
 			nextTurn();
 		}

@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "54c860ff-aa59-412a-8c26-7e63a0f403b5",
+            "Value": {
+                "id": "8206b125-b0d4-4969-b998-b6c903c33749",
+                "resourcePath": "sprites\\s_spFlamestrike\\s_spFlamestrike.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "551e780b-3fa2-484f-92fc-31eef27112cd",
             "Value": {
                 "id": "2c2dbb57-2ea0-4d77-b5b3-f7131dcd0c2f",
@@ -535,6 +543,14 @@
             }
         },
         {
+            "Key": "c388b324-6c8c-4921-8b0c-59d1cbec027d",
+            "Value": {
+                "id": "393d65e1-1af5-471a-bdd6-9abe2ff4ce2a",
+                "resourcePath": "scripts\\effectDB\\effectDB.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c641a48e-57f1-4c3a-af63-59048716d6f4",
             "Value": {
                 "id": "ef7df09d-c83b-4f84-bac6-733ae2cf22a9",
@@ -656,6 +672,7 @@
         "0134753c-e230-4a9e-b4ce-fa91de50ee1a",
         "410b2228-557b-4d1c-ad40-d0836a3afb34",
         "3c3b6c81-a1fc-49dc-b769-689f7c58f4f5",
+        "c388b324-6c8c-4921-8b0c-59d1cbec027d",
         "8689f3fa-a126-4191-913c-b51f73b5656b"
     ],
     "tutorial": ""

@@ -42,11 +42,11 @@ test[1, TARGET]     = 0;
 test[1, TRAILTYPE]  = "mine";
 
 test[2, ID]         = "2";
-test[2, SPRITE]     = noone;
+test[2, SPRITE]     = s_spFlamestrike;
 test[2, NAME]       = "Flamestrike";
 test[2, ATTR]       = "dmg";
 test[2, VALUE]      = 4;
-test[2, MPCOST]     = 2;
+test[2, MPCOST]     = 4;
 test[2, EFFECT]     = "";
 test[2, EFFECTATTR] = "";
 test[2, EFFECTVAL]  = 0;

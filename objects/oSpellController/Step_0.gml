@@ -14,7 +14,14 @@ if(!done) {
 			}
 			break;
 		case "dmg":
-			target.curHealth -= spVal;
+			show_debug_message(target);
+			if(array_length_1d(target) > 1) {
+				for(i = 0; i < array_length_1d(target); i++) {
+					target[i].curHealth -= spVal;	
+				}
+			} else {
+				target.curHealth -= spVal;
+			}
 			break;
 	}
 	player.curMana -= spMp;
