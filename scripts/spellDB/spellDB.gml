@@ -17,65 +17,65 @@ TRAILTYPE  = 10; //TYPE of TRAIL of spell, "missile" from X to Y, "mine" straigh
 #endregion
 
 #region DATABASE
-test[0, ID]         = "0";
-test[0, SPRITE]     = s_spFireball;
-test[0, NAME]       = "Fireball";
-test[0, ATTR]       = "dmg";
-test[0, VALUE]      = 2;
-test[0, MPCOST]     = 2;
-test[0, EFFECT]     = "Burn";
-test[0, EFFECTATTR] = 1;
-test[0, EFFECTVAL]  = "debuff";
-test[0, TARGET]     = 2;
-test[0, TRAILTYPE]  = "missile";
+spell[0, ID]         = "0";
+spell[0, SPRITE]     = s_spFireball;
+spell[0, NAME]       = "Fireball";
+spell[0, ATTR]       = "dmg";
+spell[0, VALUE]      = 2;
+spell[0, MPCOST]     = 2;
+spell[0, EFFECT]     = "Burn";
+spell[0, EFFECTATTR] = 1;
+spell[0, EFFECTVAL]  = "debuff";
+spell[0, TARGET]     = 2;
+spell[0, TRAILTYPE]  = "missile";
 
-test[1, ID]         = "1";
-test[1, SPRITE]     = s_spHeal;
-test[1, NAME]       = "Heal";
-test[1, ATTR]       = "heal";
-test[1, VALUE]      = 2;
-test[1, MPCOST]     = 2;
-test[1, EFFECT]     = noone;
-test[1, EFFECTATTR] = noone;
-test[1, EFFECTVAL]  = 0;
-test[1, TARGET]     = 0;
-test[1, TRAILTYPE]  = "mine";
+spell[1, ID]         = "1";
+spell[1, SPRITE]     = s_spHeal;
+spell[1, NAME]       = "Heal";
+spell[1, ATTR]       = "heal";
+spell[1, VALUE]      = 2;
+spell[1, MPCOST]     = 2;
+spell[1, EFFECT]     = noone;
+spell[1, EFFECTATTR] = noone;
+spell[1, EFFECTVAL]  = 0;
+spell[1, TARGET]     = 0;
+spell[1, TRAILTYPE]  = "mine";
 
-test[2, ID]         = "2";
-test[2, SPRITE]     = s_spFlamestrike;
-test[2, NAME]       = "Flamestrike";
-test[2, ATTR]       = "dmg";
-test[2, VALUE]      = 4;
-test[2, MPCOST]     = 4;
-test[2, EFFECT]     = noone;
-test[2, EFFECTATTR] = noone;
-test[2, EFFECTVAL]  = 0;
-test[2, TARGET]     = 3;
-test[2, TRAILTYPE]  = "mine";
+spell[2, ID]         = "2";
+spell[2, SPRITE]     = s_spFlamestrike;
+spell[2, NAME]       = "Flamestrike";
+spell[2, ATTR]       = "dmg";
+spell[2, VALUE]      = 4;
+spell[2, MPCOST]     = 4;
+spell[2, EFFECT]     = noone;
+spell[2, EFFECTATTR] = noone;
+spell[2, EFFECTVAL]  = 0;
+spell[2, TARGET]     = 3;
+spell[2, TRAILTYPE]  = "mine";
 
-test[3, ID]         = "3";
-test[3, SPRITE]     = noone;
-test[3, NAME]       = "Ralley";
-test[3, ATTR]       = "";
-test[3, VALUE]      = 0;
-test[3, MPCOST]     = 2;
-test[3, EFFECT]     = "Damage Bonus";
-test[3, EFFECTATTR] = "buff";
-test[3, EFFECTVAL]  = 2;
-test[3, TARGET]     = 1;
-test[3, TRAILTYPE]  = "mine";
+spell[3, ID]         = "3";
+spell[3, SPRITE]     = noone;
+spell[3, NAME]       = "Ralley";
+spell[3, ATTR]       = "";
+spell[3, VALUE]      = 0;
+spell[3, MPCOST]     = 2;
+spell[3, EFFECT]     = "Damage Bonus";
+spell[3, EFFECTATTR] = "buff";
+spell[3, EFFECTVAL]  = 2;
+spell[3, TARGET]     = 1;
+spell[3, TRAILTYPE]  = "mine";
 
-test[4, ID]         = "4";
-test[4, SPRITE]     = noone;
-test[4, NAME]       = "Meteor";
-test[4, ATTR]       = "dmg";
-test[4, VALUE]      = 5;
-test[4, MPCOST]     = 2;
-test[4, EFFECT]     = noone;
-test[4, EFFECTATTR] = noone;
-test[4, EFFECTVAL]  = 0;
-test[4, TARGET]     = 4;
-test[4, TRAILTYPE]  = "nuke";
+spell[4, ID]         = "4";
+spell[4, SPRITE]     = noone;
+spell[4, NAME]       = "Meteor";
+spell[4, ATTR]       = "dmg";
+spell[4, VALUE]      = 5;
+spell[4, MPCOST]     = 2;
+spell[4, EFFECT]     = noone;
+spell[4, EFFECTATTR] = noone;
+spell[4, EFFECTVAL]  = 0;
+spell[4, TARGET]     = 4;
+spell[4, TRAILTYPE]  = "nuke";
 #endregion
 
 var name = argument0;
@@ -83,19 +83,19 @@ var get  = argument1; //USE 0 FOR GET ALL
 
 #region Get Database values
 if(get == 0) {
-	for (var i = 0; i < array_length_1d(test); i++) {
-		if(test[i, NAME] == name) {
+	for (var i = 0; i < array_length_1d(spell); i++) {
+		if(spell[i, NAME] == name) {
 			for(var j = 1; j < VARAMM; j++) {
-				spellArray[j-1] = test[i, j];
+				spellArray[j-1] = spell[i, j];
 			}
 			return spellArray;
 			break;
 		}
 	}
 } else {
-	for (var i = 0; i < array_length_1d(test); i++) {
-		if(test[i, NAME] == name) {
-			getValue = test[i, get];
+	for (var i = 0; i < array_length_1d(spell); i++) {
+		if(spell[i, NAME] == name) {
+			getValue = spell[i, get];
 			return getValue;
 			break;
 		}
