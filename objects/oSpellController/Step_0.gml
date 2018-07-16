@@ -24,6 +24,9 @@ if(!done) {
 			}
 			break;
 	}
+	if(spEffect != "") {
+		show_debug_message(spEffect);
+	}
 	player.curMana -= spMp;
 	done = !done;
 }
