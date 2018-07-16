@@ -4,7 +4,7 @@ var currentPlayer = oCombatController.currentPlayerTurn;
 var currentTarget = currentPlayer.curTarget;
 
 if(currentPlayer.id == obj_char_battle.id || currentPlayer.id == oCompBattleParent.id) {
-	if(currentPlayer.state == "idle") {
+	if(currentPlayer.state == "idle" || currentPlayer.state == "end") {
 		instance_destroy();	
 	}
 	

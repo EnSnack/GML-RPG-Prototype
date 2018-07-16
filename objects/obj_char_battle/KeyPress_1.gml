@@ -22,6 +22,7 @@ if(active) {
 					break;
 				case 1:
 					state = "magic";
+					instance_create_layer(0,0,"Technical",oCombatCurrentTarget);
 					instance_create_layer(x,y,"Technical",oCombatMenu)
 					io_clear();
 					break;

@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(oCombatController.currentTeamTurn == 0 && player.active && player.state == "magic" || player.state == "skill" || player.state == "summon") {
+if(oCombatController.currentTeamTurn == 0 && player.active) {
 	switch(pState) {
 		case "magic":
 			if(player.curSpellsLearnt > 0 && player.curMagicSelected == 0) {
