@@ -83,7 +83,7 @@ var get  = argument1; //USE 0 FOR GET ALL
 
 #region Get Database values
 if(get == 0) {
-	for (var i = 0; i < array_length_1d(spell); i++) {
+	for (var i = 0; i < array_height_2d(spell); i++) {
 		if(spell[i, NAME] == name) {
 			for(var j = 1; j < VARAMM; j++) {
 				spellArray[j-1] = spell[i, j];
@@ -93,7 +93,7 @@ if(get == 0) {
 		}
 	}
 } else {
-	for (var i = 0; i < array_length_1d(spell); i++) {
+	for (var i = 0; i < array_height_2d(spell); i++) {
 		if(spell[i, NAME] == name) {
 			getValue = spell[i, get];
 			return getValue;

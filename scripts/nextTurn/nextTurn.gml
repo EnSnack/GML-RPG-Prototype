@@ -1,3 +1,4 @@
+effectTick();
 fightOrder();
 updateNextTurn();
 

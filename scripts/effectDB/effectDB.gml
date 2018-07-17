@@ -27,7 +27,7 @@ effect[1, NAME]       = "hot";
 effect[1, ATTR]       = "buff";
 effect[1, VALUE]      = 2;
 effect[1, TARGET]     = 1;
-effect[1, DURATION]   = 2;
+effect[1, DURATION]   = 14;
 effect[1, FUNCTION]   = "hot";
 #endregion
 
@@ -36,7 +36,7 @@ var get  = argument1; //USE 0 FOR GET ALL
 
 #region Get Database values
 if(get == 0) {
-	for (var i = 0; i < array_length_1d(effect); i++) {
+	for (var i = 0; i < array_height_2d(effect); i++) {
 		if(effect[i, NAME] == name) {
 			for(var j = 1; j < VARAMM; j++) {
 				spellArray[j-1] = effect[i, j];
@@ -46,7 +46,7 @@ if(get == 0) {
 		}
 	}
 } else {
-	for (var i = 0; i < array_length_1d(effect); i++) {
+	for (var i = 0; i < array_height_2d(effect); i++) {
 		if(effect[i, NAME] == name) {
 			getValue = effect[i, get];
 			return getValue;

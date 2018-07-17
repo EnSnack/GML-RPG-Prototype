@@ -15,14 +15,14 @@ if(!done) {
 			}
 			if(spEffect != noone) {
 				found = false;
-				for (var i = 0; i < array_length_1d(target.curBuffs); i++) {
+				for (var i = 0; i < array_height_2d(target.curBuffs); i++) {
 					if(target.curBuffs[i, 0] == spEffect) {
 						target.curBuffs[i, 1] = effectDB(spEffect, 6);
 						found = !found;
 					}
 				}
 				if(!found) {
-					pos = array_length_1d(target.curBuffs);
+					pos = array_height_2d(target.curBuffs);
 					target.curBuffs[pos, 0] = spEffect;
 					target.curBuffs[pos, 1] = effectDB(spEffect, 6);
 				}
