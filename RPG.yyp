@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "488eb947-3269-4301-943c-46a8835bf844",
+            "Value": {
+                "id": "253a2636-8145-4242-a66d-67a55790cb74",
+                "resourcePath": "scripts\\effectTick\\effectTick.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4ed1ed87-7891-46b9-a5bc-1d8e746102ae",
             "Value": {
                 "id": "2de90f9e-e1ef-476a-8092-e4dd0cf90d0b",
@@ -670,6 +678,7 @@
         "345793ab-9042-4779-abcf-91749056ada9",
         "3984f757-c47f-40fc-b1e4-820d79b34f94",
         "0134753c-e230-4a9e-b4ce-fa91de50ee1a",
+        "488eb947-3269-4301-943c-46a8835bf844",
         "410b2228-557b-4d1c-ad40-d0836a3afb34",
         "3c3b6c81-a1fc-49dc-b769-689f7c58f4f5",
         "c388b324-6c8c-4921-8b0c-59d1cbec027d",

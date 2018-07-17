@@ -30,10 +30,10 @@ if(active) {
 					io_clear();
 					break;
 				case 1:
+					io_clear();
 					state = "magic";
 					instance_create_layer(0,0,"Technical",oCombatCurrentTarget);
 					instance_create_layer(x,y,"Technical",oCombatMenu)
-					io_clear();
 					break;
 				case 2:
 					state = "skill";
@@ -45,7 +45,7 @@ if(active) {
 					break;
 			
 			}
-			oCombatAction.compActChoice = oCombatAction.actChoice;
+			oCombatAction.mcActChoice = oCombatAction.actChoice;
 		}
 	}
 	#endregion
@@ -74,6 +74,7 @@ if(active) {
 			state = "magic";
 			curMagicSelected = 0;
 			curTarget = 0;
+			spellCast = noone;
 			io_clear();
 		}
 		if (keyboard_check_pressed(combat_inputs[0]) && curMagicSelected != 0) {
@@ -147,8 +148,6 @@ if(active) {
 	
 	#region End State
 		if(state == "end") {
-			oCombatAction.mcActChoice = 0;
-			oCombatAction.actChoice = 0;
 			curTarget = 0;
 			curSpell = 0;
 			curMagicSelected = 0;

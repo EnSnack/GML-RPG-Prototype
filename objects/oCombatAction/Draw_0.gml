@@ -20,7 +20,3 @@ if(oCombatController.currentTeamTurn == 0 && oCombatController.currentPlayerTurn
 	draw_sprite(sBattleAction, 2, x+15, y-60);
 	draw_sprite(sBattleAction, 3, x+55, y-60);
 }
-
-if(oCombatController.currentPlayerTurn.state == "end") {
-	instance_destroy();	
-}

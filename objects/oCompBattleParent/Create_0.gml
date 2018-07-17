@@ -9,8 +9,9 @@ curDamage        = oMcInit.curDamage;
 curSpellsLearnt  = array_create(0);
 curSummonsLearnt = array_create(0);
 curSkillsLearnt  = array_create(0);
-curBuffs  = array_create(0);
-curDebuffs = array_create(0);
+curBuffs         = array_create(0);
+curDebuffs       = array_create(0);
+spellCast        = array_create(0);
 for(i = 0; i < array_length_1d(oMcInit.curSpellsLearnt); i++) {
 	curSpellsLearnt[i] = oMcInit.curSpellsLearnt[i];
 }
