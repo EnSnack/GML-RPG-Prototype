@@ -38,7 +38,7 @@ spell[1, MPCOST]     = 2;
 spell[1, EFFECT]     = "hot";
 spell[1, EFFECTATTR] = "buff";
 spell[1, EFFECTVAL]  = 1;
-spell[1, TARGET]     = 0;
+spell[1, TARGET]     = 2;
 spell[1, TRAILTYPE]  = "mine";
 
 spell[2, ID]         = "2";
