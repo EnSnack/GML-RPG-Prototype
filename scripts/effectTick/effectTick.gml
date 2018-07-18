@@ -35,4 +35,4 @@ for(i = 0; i < array_length_1d(buffedChar); i++) {
 }
 
 //show_debug_message(totalBuffs);
-//show_debug_message(buffedChar[2].curBuffs);
+//show_debug_message(buffedChar[0].curBuffs);

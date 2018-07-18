@@ -6,3 +6,10 @@ draw_healthbar(300, 20, 480, 50, (mcOldCurMana / mcMaxMana) * 100, c_black, c_bl
 draw_text(220, 25, round(mcOldCurHealth));
 draw_text(500, 25, round(mcOldCurMana));
 draw_text(220, 85, round(compOldCurHealth));
+
+if(array_height_2d(obj_char_battle.curBuffs) > 0) {
+	for(i = 0; i < array_height_2d(obj_char_battle.curBuffs); i++) {
+		icon = effectDB(obj_char_battle.curBuffs[i, 0], 2);
+		draw_sprite(icon, 0, 300, 20);
+	}
+}

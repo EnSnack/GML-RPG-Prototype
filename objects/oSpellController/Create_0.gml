@@ -7,10 +7,8 @@ spAttr = spellCast[2]
 spVal = spellCast[3];
 spMp = spellCast[4];
 spEffect = spellCast[5];
-spEffectAttr = spellCast[6];
-spEffectVal = spellCast[7];
-spTarget = spellCast[8];
-spTrail = spellCast[9];
+spTarget = spellCast[6];
+spTrail = spellCast[7];
 image_speed = 0.1;
 
 player = oCombatController.currentPlayerTurn;
