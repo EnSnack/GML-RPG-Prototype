@@ -20,16 +20,27 @@ for(i = 0; i < array_length_1d(characters); i++) {
 for(i = 0; i < array_length_1d(buffedChar); i++) {
 	if(buffedChar[i] != 0) {
 		for(j = 0; j < array_height_2d(buffedChar[i].curBuffs); j++) {
-			if(buffedChar[i].curBuffs[j, 1] > 1) {
+			if(buffedChar[i].curBuffs[j, 1] >= 1) {
+				show_debug_message("==== START (ONE) ====");
+				show_debug_message("buffedChars before: " + string(buffedChar[i]));
+				show_debug_message("buffedChars Current Buffs before: " + string(buffedChar[i].curBuffs));
+				show_debug_message("totalBuffs before: " + string(totalBuffs));
+				show_debug_message("j (ONE): " + string(j));
 				totalBuffs[j, 0] = buffedChar[i].curBuffs[j, 0];
 				totalBuffs[j, 1] = buffedChar[i].curBuffs[j, 1];
-				buffedChar[i].curBuffs[j, 1] = buffedChar[i].curBuffs[j, 1] - 1;
+				buffedChar[i].curBuffs[j, 1] = totalBuffs[j, 1] - 1;
+				show_debug_message("buffedChars after: " + string(buffedChar[i]));
+				show_debug_message("buffedChars Current Buffs after: " + string(buffedChar[i].curBuffs));
+				show_debug_message("totalBuffs after: " + string(totalBuffs));
+				show_debug_message("==== END (ONE) ====");
+			} else {
+				show_debug_message("buffedChars Current Buffs before: " + string(buffedChar[i].curBuffs[j, 1]));
+				show_debug_message("j before: " + string(j));
+				j = j + 1;
+				show_debug_message("j after: " + string(j));
+				show_debug_message("buffedChars Current Buffs after: " + string(buffedChar[i].curBuffs[j, 1]));
 			}
-			else {
-				buffedChar[i].curBuffs = totalBuffs;
-				//buffedChar[i].curBuffs[j, 0] = 0;
-				//buffedChar[i].curBuffs[j, 1] = 0;
-			}
+			//buffedChar[i].curBuffs = totalBuffs;
 		}
 	}
 }
