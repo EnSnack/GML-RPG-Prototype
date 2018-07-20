@@ -14,24 +14,84 @@ FUNCTION   =  8; //FUNCTIONALITY of effect (?)
 
 #region DATABASE
 effect[0, ID]         = "0";
-effect[0, SPRITE]     = s_spFireball;
+effect[0, SPRITE]     = noone;
 effect[0, ICON]       = s_spBurnIcon;
 effect[0, NAME]       = "Burn";
-effect[0, ATTR]       = "buff";
+effect[0, ATTR]       = "debuff";
 effect[0, VALUE]      = 2;
-effect[0, TARGET]     = 2;
-effect[0, DURATION]   = 2;
+effect[0, TARGET]     = 0;
+effect[0, DURATION]   = 10;
 effect[0, FUNCTION]   = "dot";
 
 effect[1, ID]         = "1";
-effect[1, SPRITE]     = s_spHeal;
-effect[1, ICON]       = s_spHotIcon;
-effect[1, NAME]       = "hot";
-effect[1, ATTR]       = "buff";
-effect[1, VALUE]      = 2;
-effect[1, TARGET]     = 1;
-effect[1, DURATION]   = 14;
-effect[1, FUNCTION]   = "hot";
+effect[1, SPRITE]     = noone;
+effect[1, ICON]       = s_spTalkIcon;
+effect[1, NAME]       = "Silence";
+effect[1, ATTR]       = "debuff";
+effect[1, VALUE]      = 0;
+effect[1, TARGET]     = 0;
+effect[1, DURATION]   = 9;
+effect[1, FUNCTION]   = "silence";
+
+effect[2, ID]         = "2";
+effect[2, SPRITE]     = noone;
+effect[2, ICON]       = s_spHeartDIcon;
+effect[2, NAME]       = "Poison";
+effect[2, ATTR]       = "debuff";
+effect[2, VALUE]      = 0;
+effect[2, TARGET]     = 0;
+effect[2, DURATION]   = 2;
+effect[2, FUNCTION]   = "dot";
+
+effect[3, ID]         = "3";
+effect[3, SPRITE]     = noone;
+effect[3, ICON]       = s_spHeartCIcon;
+effect[3, NAME]       = "Charm";
+effect[3, ATTR]       = "debuff";
+effect[3, VALUE]      = 0;
+effect[3, TARGET]     = 0;
+effect[3, DURATION]   = 6;
+effect[3, FUNCTION]   = "charm";
+
+effect[4, ID]         = "4";
+effect[4, SPRITE]     = noone;
+effect[4, ICON]       = s_spBoneIcon;
+effect[4, NAME]       = "Break";
+effect[4, ATTR]       = "debuff";
+effect[4, VALUE]      = 0;
+effect[4, TARGET]     = 0;
+effect[4, DURATION]   = 7;
+effect[4, FUNCTION]   = "slow";
+
+effect[5, ID]         = "5";
+effect[5, SPRITE]     = noone;
+effect[5, ICON]       = s_spBlindIcon;
+effect[5, NAME]       = "Blind";
+effect[5, ATTR]       = "debuff";
+effect[5, VALUE]      = 0;
+effect[5, TARGET]     = 0;
+effect[5, DURATION]   = 4;
+effect[5, FUNCTION]   = "blind";
+
+effect[6, ID]         = "6";
+effect[6, SPRITE]     = noone;
+effect[6, ICON]       = s_spBowDownIcon;
+effect[6, NAME]       = "Reduce Bow";
+effect[6, ATTR]       = "debuff";
+effect[6, VALUE]      = 0;
+effect[6, TARGET]     = 0;
+effect[6, DURATION]   = 6;
+effect[6, FUNCTION]   = "bowdown";
+
+effect[7, ID]         = "7";
+effect[7, SPRITE]     = noone;
+effect[7, ICON]       = s_spDmgDownIcon;
+effect[7, NAME]       = "Reduce Damage";
+effect[7, ATTR]       = "debuff";
+effect[7, VALUE]      = 0;
+effect[7, TARGET]     = 0;
+effect[7, DURATION]   = 2;
+effect[7, FUNCTION]   = "damagedown";
 #endregion
 
 var name = argument0;

@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(!done) {
-	show_debug_message(spEffect);
 	switch(spAttr) {
 		case "heal":
 			if(target.curHealth < target.maxHealth) {
@@ -15,7 +14,6 @@ if(!done) {
 			}
 			break;
 		case "dmg":
-			show_debug_message(target);
 			if(array_length_1d(target) > 1) {
 				for(i = 0; i < array_length_1d(target); i++) {
 					target[i].curHealth -= spVal;
@@ -25,7 +23,7 @@ if(!done) {
 			}
 			break;
 	}
-	if(spEffect != noone) {
+	if(spEffect != noone && effectDB(spEffect, 4) == "buff") {
 		found = false;
 		for (var i = 0; i < array_height_2d(target.curBuffs); i++) {
 			if(target.curBuffs[i, 0] == spEffect) {
@@ -37,6 +35,20 @@ if(!done) {
 			pos = array_height_2d(target.curBuffs);
 			target.curBuffs[pos, 0] = spEffect;
 			target.curBuffs[pos, 1] = effectDB(spEffect, 7);
+		}
+	} 
+	else if(spEffect != noone && effectDB(spEffect, 4) == "debuff") {
+		found = false;
+		for (var i = 0; i < array_height_2d(target.curDebuffs); i++) {
+			if(target.curDebuffs[i, 0] == spEffect) {
+				target.curDebuffs[i, 1] = effectDB(spEffect, 7);
+				found = !found;
+			}
+		}
+		if(!found) {
+			pos = array_height_2d(target.curDebuffs);
+			target.curDebuffs[pos, 0] = spEffect;
+			target.curDebuffs[pos, 1] = effectDB(spEffect, 7);
 		}
 	}
 	player.curMana -= spMp;

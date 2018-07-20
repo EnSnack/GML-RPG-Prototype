@@ -10,7 +10,15 @@ draw_text(220, 85, round(compOldCurHealth));
 if(array_height_2d(obj_char_battle.curBuffs) > 0) {
 	for(i = 0; i < array_height_2d(obj_char_battle.curBuffs); i++) {
 		icon = effectDB(obj_char_battle.curBuffs[i, 0], 2);
-		draw_sprite(icon, 0, 300 + (i * 20), 20);
-		draw_text(310 + (i * 20), 30, obj_char_battle.curBuffs[i, 1]);
+		draw_sprite(icon, 0, 300 + (i * 20), 60);
+		draw_text(310 + (i * 20), 70, obj_char_battle.curBuffs[i, 1]);
+	}
+}
+
+if(array_height_2d(obj_char_battle.curDebuffs) > 0) {
+	for(i = 0; i < array_height_2d(obj_char_battle.curDebuffs); i++) {
+		icon = effectDB(obj_char_battle.curDebuffs[i, 0], 2);
+		draw_sprite(icon, 0, 300 + (i * 20), 90);
+		draw_text(310 + (i * 20), 100, obj_char_battle.curDebuffs[i, 1]);
 	}
 }
