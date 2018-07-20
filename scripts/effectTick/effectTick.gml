@@ -1,7 +1,6 @@
 var characters = array_create(0);
 var buffedChar = array_create(0);
 var totalBuffs = array_create(0);
-var newBuffs   = array_create(0);
 var invis      = 0;
 var leftParty  = oCombatController.partyLeft;
 var rightParty = oCombatController.partyRight;
