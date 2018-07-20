@@ -11,8 +11,9 @@ var rightParty   = oCombatController.partyRight;
 for(i = 0; i < ds_list_size(leftParty); i++) {
 	characters[i] = ds_list_find_value(leftParty, i);
 }
-for(i = ds_list_size(leftParty); i < ds_list_size(leftParty)+ds_list_size(rightParty); i++) {
-	characters[i] = ds_list_find_value(rightParty, (i+1)-ds_list_size(rightParty));
+
+for(i = 0; i < ds_list_size(rightParty); i++) {
+	characters[i+ds_list_size(leftParty)] = ds_list_find_value(rightParty, i);
 }
 
 for(i = 0; i < array_length_1d(characters); i++) {

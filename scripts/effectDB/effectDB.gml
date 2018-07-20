@@ -20,7 +20,7 @@ effect[0, NAME]       = "Burn";
 effect[0, ATTR]       = "debuff";
 effect[0, VALUE]      = 2;
 effect[0, TARGET]     = 0;
-effect[0, DURATION]   = 10;
+effect[0, DURATION]   = 15;
 effect[0, FUNCTION]   = "dot";
 
 effect[1, ID]         = "1";
@@ -30,7 +30,7 @@ effect[1, NAME]       = "Silence";
 effect[1, ATTR]       = "debuff";
 effect[1, VALUE]      = 0;
 effect[1, TARGET]     = 0;
-effect[1, DURATION]   = 9;
+effect[1, DURATION]   = 20;
 effect[1, FUNCTION]   = "silence";
 
 effect[2, ID]         = "2";
@@ -40,7 +40,7 @@ effect[2, NAME]       = "Poison";
 effect[2, ATTR]       = "debuff";
 effect[2, VALUE]      = 0;
 effect[2, TARGET]     = 0;
-effect[2, DURATION]   = 2;
+effect[2, DURATION]   = 25;
 effect[2, FUNCTION]   = "dot";
 
 effect[3, ID]         = "3";
@@ -50,7 +50,7 @@ effect[3, NAME]       = "Charm";
 effect[3, ATTR]       = "debuff";
 effect[3, VALUE]      = 0;
 effect[3, TARGET]     = 0;
-effect[3, DURATION]   = 6;
+effect[3, DURATION]   = 30;
 effect[3, FUNCTION]   = "charm";
 
 effect[4, ID]         = "4";
@@ -60,7 +60,7 @@ effect[4, NAME]       = "Break";
 effect[4, ATTR]       = "debuff";
 effect[4, VALUE]      = 0;
 effect[4, TARGET]     = 0;
-effect[4, DURATION]   = 7;
+effect[4, DURATION]   = 35;
 effect[4, FUNCTION]   = "slow";
 
 effect[5, ID]         = "5";
@@ -70,7 +70,7 @@ effect[5, NAME]       = "Blind";
 effect[5, ATTR]       = "debuff";
 effect[5, VALUE]      = 0;
 effect[5, TARGET]     = 0;
-effect[5, DURATION]   = 4;
+effect[5, DURATION]   = 40;
 effect[5, FUNCTION]   = "blind";
 
 effect[6, ID]         = "6";
@@ -80,7 +80,7 @@ effect[6, NAME]       = "Reduce Bow";
 effect[6, ATTR]       = "debuff";
 effect[6, VALUE]      = 0;
 effect[6, TARGET]     = 0;
-effect[6, DURATION]   = 6;
+effect[6, DURATION]   = 45;
 effect[6, FUNCTION]   = "bowdown";
 
 effect[7, ID]         = "7";
@@ -90,7 +90,7 @@ effect[7, NAME]       = "Reduce Damage";
 effect[7, ATTR]       = "debuff";
 effect[7, VALUE]      = 0;
 effect[7, TARGET]     = 0;
-effect[7, DURATION]   = 2;
+effect[7, DURATION]   = 50;
 effect[7, FUNCTION]   = "damagedown";
 #endregion
 
