@@ -1,11 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-mcCurHealth = obj_char_battle.curHealth;
-mcCurMana = obj_char_battle.curMana
-mcMaxHealth = obj_char_battle.maxHealth;
-mcMaxMana = obj_char_battle.maxMana;
-compCurHealth = obj_comp_battle.curHealth;
-compMaxHealth = obj_comp_battle.maxHealth;
+mcCurHealth = characters[0].curHealth;
+mcCurMana = characters[0].curMana
+mcMaxHealth = characters[0].maxHealth;
+mcMaxMana = characters[0].maxMana;
+compCurHealth = characters[1].curHealth;
+compMaxHealth = characters[1].maxHealth;
 if(mcOldCurHealth > mcCurHealth || mcOldCurHealth < mcCurHealth) {
 	mcOldCurHealth = lerp(mcOldCurHealth, mcCurHealth, 0.1);
 }

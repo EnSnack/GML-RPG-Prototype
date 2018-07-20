@@ -7,18 +7,19 @@ draw_text(220, 25, round(mcOldCurHealth));
 draw_text(500, 25, round(mcOldCurMana));
 draw_text(220, 85, round(compOldCurHealth));
 
-if(array_height_2d(obj_char_battle.curBuffs) > 0) {
-	for(i = 0; i < array_height_2d(obj_char_battle.curBuffs); i++) {
-		icon = effectDB(obj_char_battle.curBuffs[i, 0], 2);
-		draw_sprite(icon, 0, 300 + (i * 20), 60);
-		draw_text(310 + (i * 20), 70, obj_char_battle.curBuffs[i, 1]);
+for(i = 0; i < array_length_1d(characters); i++) {
+	if(array_height_2d(characters[i].curBuffs) > 0) {
+		for(j = 0; j < array_height_2d(characters[i].curBuffs); j++) {
+			icon = effectDB(characters[i].curBuffs[j, 0], 2);
+			draw_sprite(icon, 0, 300 + (j * 20), 60);
+			draw_text(310 + (j * 20), 70, characters[i].curBuffs[j, 1]);
+		}
 	}
-}
-
-if(array_height_2d(obj_char_battle.curDebuffs) > 0) {
-	for(i = 0; i < array_height_2d(obj_char_battle.curDebuffs); i++) {
-		icon = effectDB(obj_char_battle.curDebuffs[i, 0], 2);
-		draw_sprite(icon, 0, 300 + (i * 20), 90);
-		draw_text(310 + (i * 20), 100, obj_char_battle.curDebuffs[i, 1]);
+	if(array_height_2d(characters[i].curDebuffs) > 0) {
+		for(j = 0; j < array_height_2d(characters[i].curDebuffs); j++) {
+			icon = effectDB(characters[i].curDebuffs[j, 0], 2);
+			draw_sprite(icon, 0, characters[i].x + (j * 20), characters[i].y);
+			draw_text(characters[i].x + (j * 20), characters[i].y+30, characters[i].curDebuffs[j, 1]);
+		}
 	}
 }
