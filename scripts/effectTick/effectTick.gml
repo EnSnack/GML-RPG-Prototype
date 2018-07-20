@@ -29,16 +29,16 @@ for(i = 0; i < array_length_1d(buffedChar); i++) {
 	if(buffedChar[i] != 0) {
 		for(j = 0; j < array_height_2d(buffedChar[i].curBuffs); j++) {
 			if(buffedChar[i].curBuffs[j, 1] > 1) {
-				show_debug_message("===START===");
+				/*show_debug_message("===START===");
 				show_debug_message("CurBuffs Length Before: " + string(array_height_2d(buffedChar[i].curBuffs)));
 				show_debug_message("CurBuffs Before: " + string(buffedChar[i].curBuffs));
-				show_debug_message("totalBuffs Before: " + string(totalBuffs));
+				show_debug_message("totalBuffs Before: " + string(totalBuffs));*/
 				totalBuffs[j-invisb, 0] = buffedChar[i].curBuffs[j, 0];
 				totalBuffs[j-invisb, 1] = buffedChar[i].curBuffs[j, 1] - 1;
-				show_debug_message("CurBuffs Length after: " + string(array_height_2d(buffedChar[i].curBuffs)));
+				/*show_debug_message("CurBuffs Length after: " + string(array_height_2d(buffedChar[i].curBuffs)));
 				show_debug_message("CurBuffs after: " + string(buffedChar[i].curBuffs));
 				show_debug_message("totalBuffs after: " + string(totalBuffs));
-				show_debug_message("===END===");
+				show_debug_message("===END===");*/
 			}
 			else {
 				invisb++;
@@ -55,16 +55,16 @@ for(i = 0; i < array_length_1d(debuffedChar); i++) {
 	if(debuffedChar[i] != 0) {
 		for(j = 0; j < array_height_2d(debuffedChar[i].curDebuffs); j++) {
 			if(debuffedChar[i].curDebuffs[j, 1] > 1) {
-				show_debug_message("===START===");
+				/*show_debug_message("===START===");
 				show_debug_message("CurDebuffs Length Before: " + string(array_height_2d(debuffedChar[i].curDebuffs)));
 				show_debug_message("CurDebuffs Before: " + string(debuffedChar[i].curDebuffs));
-				show_debug_message("totalDebuffs Before: " + string(totalDebuffs));
+				show_debug_message("totalDebuffs Before: " + string(totalDebuffs));*/
 				totalDebuffs[j-invisd, 0] = debuffedChar[i].curDebuffs[j, 0];
 				totalDebuffs[j-invisd, 1] = debuffedChar[i].curDebuffs[j, 1] - 1;
-				show_debug_message("CurDebuffs Length after: " + string(array_height_2d(debuffedChar[i].curDebuffs)));
+				/*show_debug_message("CurDebuffs Length after: " + string(array_height_2d(debuffedChar[i].curDebuffs)));
 				show_debug_message("CurDebuffs after: " + string(debuffedChar[i].curDebuffs));
 				show_debug_message("totalDebuffs after: " + string(totalDebuffs));
-				show_debug_message("===END===");
+				show_debug_message("===END===");*/
 			}
 			else {
 				invisd++;
