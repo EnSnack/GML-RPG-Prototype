@@ -20,9 +20,6 @@ for(i = 0; i < array_length_1d(characters); i++) {
 	if(array_height_2d(characters[i].curBuffs) > 0) {
 		buffedChar[i] = characters[i];
 	}
-}
-
-for(i = 0; i < array_length_1d(characters); i++) {
 	if(array_height_2d(characters[i].curDebuffs) > 0) {
 		debuffedChar[i] = characters[i];
 	}
