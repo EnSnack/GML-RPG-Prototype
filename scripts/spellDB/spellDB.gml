@@ -22,7 +22,7 @@ spell[0, ATTR]       = "dmg";
 spell[0, VALUE]      = 2;
 spell[0, MPCOST]     = 0;
 spell[0, EFFECT]     = "Burn";
-spell[0, TARGET]     = 0;
+spell[0, TARGET]     = 2;
 spell[0, TRAILTYPE]  = "missile";
 
 spell[1, ID]         = "1";

@@ -36,11 +36,11 @@ if(active) {
 					instance_create_layer(x,y,"Technical",oCombatMenu)
 					break;
 				case 2:
-					state = "skill";
+					//state = "skill";
 					io_clear();
 					break;
 				case 3:
-					state = "run";
+					//state = "run";
 					io_clear();
 					break;
 			
@@ -62,7 +62,8 @@ if(active) {
 			curTarget--;
 		}
 		if (keyboard_check_pressed(combat_inputs[0])) {
-			if(bonusDamage - minusDamage > curDamage) {
+			state = "lock";
+			if(curDamage + (bonusDamage - minusDamage) > 0) {
 				curTarget.curHealth = curTarget.curHealth - (curDamage + (bonusDamage - minusDamage));
 			}
 			state = "end";
@@ -80,6 +81,7 @@ if(active) {
 			io_clear();
 		}
 		if (keyboard_check_pressed(combat_inputs[0]) && curMagicSelected != 0) {
+			state = "lock";
 			instance_create_layer(0,0,"Technical",oSpellController);
 		}
 		if(curMagicSelected != 0) {
