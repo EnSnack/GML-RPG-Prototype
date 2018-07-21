@@ -62,7 +62,9 @@ if(active) {
 			curTarget--;
 		}
 		if (keyboard_check_pressed(combat_inputs[0])) {
-			curTarget.curHealth = curTarget.curHealth - curDamage;
+			if(bonusDamage - minusDamage > curDamage) {
+				curTarget.curHealth = curTarget.curHealth - (curDamage + (bonusDamage - minusDamage));
+			}
 			state = "end";
 		}
 	}
