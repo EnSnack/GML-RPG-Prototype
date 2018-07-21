@@ -15,19 +15,36 @@ if(spSprite != noone && !done) {
 	}
 	if(spTrail == "missile") {
 		draw_sprite_ext(spSprite,image_index,missilex,missiley,1,1,rotation,c_white,1);
-		if(missilex < target.x - target.sprite_xoffset) {
-			if(image_index <= 5) {
-				missilex += missilespeedx;
-				missiley += missilespeedy;
-			} 
-			else if(image_index > 5) {
-					image_index = 0;	
+		if(player.x < target.x) {
+			if(missilex < target.x - target.sprite_xoffset) {
+				if(image_index <= 5) {
+					missilex += missilespeedx;
+					missiley += missilespeedy;
+				} 
+				else if(image_index > 5) {
+						image_index = 0;	
+				}
 			}
-		}
-		else if(missilex >= target.x - target.sprite_xoffset && image_index <= 5) {
-			rotation = 0;
-			image_speed = 0.5;
-			image_index = 6;
+			else if(missilex >= target.x - target.sprite_xoffset && image_index <= 5) {
+				rotation = 0;
+				image_speed = 0.5;
+				image_index = 6;
+			}
+		} else {
+			if(missilex > target.x + target.sprite_xoffset) {
+				if(image_index <= 5) {
+					missilex -= missilespeedx;
+					missiley -= missilespeedy;
+				} 
+				else if(image_index > 5) {
+						image_index = 0;	
+				}
+			}
+			else if(missilex <= target.x + target.sprite_xoffset && image_index <= 6) {
+				rotation = 0;
+				image_speed = 0.5;
+				image_index = 6;
+			}	
 		}
 	}
 }
