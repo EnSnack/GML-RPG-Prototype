@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(spSprite != noone) {
+if(spSprite != noone && !done) {
 	if(spTrail == "mine") {
 		if(array_length_1d(target) > 1) {
 			for(i = 0; i < array_length_1d(target); i++) {
@@ -33,6 +33,10 @@ if(spSprite != noone) {
 }
 
 if (image_index+image_speed >= sprite_get_number(spSprite)) {
-	player.state = "end";
-	instance_destroy();
+	if(!done) {
+		ready = true;	
+	} else {
+		player.state = "end";
+		instance_destroy();
+	}
 }

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 maxHealth = 30;
-curHealth = 30;
+curHealth = 2;
 curDamage = 0;
 curTarget = noone;
 active = false;

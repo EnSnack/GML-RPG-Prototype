@@ -14,6 +14,7 @@ image_speed = 0.1;
 player = oCombatController.currentPlayerTurn;
 target = oCombatController.currentPlayerTurn.curTarget;
 done = false;
+ready = false;
 
 if(spTrail == "missile") {
 missilex = player.x;

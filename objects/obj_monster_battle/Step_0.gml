@@ -18,6 +18,8 @@ if(active) {
 	nextTurn();
 }
 if(self.curHealth <= 0) {
+	curBuffs = 0;
+	curDebuffs = 0;
 	ds_list_delete(oCombatController.partyRight, ds_list_find_index(oCombatController.partyRight, id));
 	instance_destroy(self);
 }
