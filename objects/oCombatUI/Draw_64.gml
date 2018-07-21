@@ -18,8 +18,11 @@ for(i = 0; i < array_length_1d(characters); i++) {
 	if(array_height_2d(characters[i].curDebuffs) > 0) {
 		for(j = 0; j < array_height_2d(characters[i].curDebuffs); j++) {
 			icon = effectDB(characters[i].curDebuffs[j, 0], 2);
-			draw_sprite(icon, 0, characters[i].x + (j * 20), characters[i].y);
-			draw_text(characters[i].x + (j * 20), characters[i].y+30, characters[i].curDebuffs[j, 1]);
+			draw_sprite(icon, 0, characters[i].x + (j * 20), characters[i].y+30);
+			draw_text(characters[i].x + (j * 20) + 5, characters[i].y+35, characters[i].curDebuffs[j, 1]);
+			if(mouse_x > characters[i].x + (j * 20) && mouse_x < characters[i].x + (j * 20) + 16 && mouse_y > characters[i].y+30 && mouse_y < characters[i].y+46) {
+				draw_text(mouse_x, mouse_y, effectDB(characters[i].curDebuffs[j, 0], 9));
+			}
 		}
 	}
 }
