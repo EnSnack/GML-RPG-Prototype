@@ -63,10 +63,12 @@ if(active) {
 		}
 		if (keyboard_check_pressed(combat_inputs[0])) {
 			state = "lock";
-			if(curDamage + (bonusDamage - minusDamage) > 0) {
+			io_clear();
+			/*if(curDamage + (bonusDamage - minusDamage) > 0) {
 				curTarget.curHealth = curTarget.curHealth - (curDamage + (bonusDamage - minusDamage));
-			}
-			state = "end";
+			}*/
+			instance_create_layer(0,0,"Technical",oTimedBasicAttack);
+			//state = "end";
 		}
 	}
 	#endregion

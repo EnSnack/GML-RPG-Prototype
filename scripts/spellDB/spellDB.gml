@@ -27,11 +27,11 @@ spell[0, TRAILTYPE]  = "missile";
 
 spell[1, ID]         = "1";
 spell[1, SPRITE]     = s_spHeal;
-spell[1, NAME]       = "Silence";
+spell[1, NAME]       = "Damage Increase";
 spell[1, ATTR]       = "dmg";
 spell[1, VALUE]      = 0;
 spell[1, MPCOST]     = 0;
-spell[1, EFFECT]     = "Silence";
+spell[1, EFFECT]     = "Increase Damage";
 spell[1, TARGET]     = 0;
 spell[1, TRAILTYPE]  = "mine";
 

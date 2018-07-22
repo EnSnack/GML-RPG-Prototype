@@ -415,6 +415,14 @@
             }
         },
         {
+            "Key": "76d8ec09-ae66-49c6-a9e5-4a900d3b658d",
+            "Value": {
+                "id": "6eea9ccc-16f2-4b98-87b1-4c7a443042ef",
+                "resourcePath": "sprites\\sFightThingTest\\sFightThingTest.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "77529e78-9d30-4ce9-b4aa-ec6918f35d49",
             "Value": {
                 "id": "120f3087-257e-49d2-a669-bcd825701e80",
@@ -635,6 +643,14 @@
             "Value": {
                 "id": "a1c31ed4-439d-4da7-9a52-b8a49da99d7a",
                 "resourcePath": "objects\\oDebug\\oDebug.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "be118b3a-b00e-4777-8c52-0e5daa6a594a",
+            "Value": {
+                "id": "461867f3-95ab-42a1-80b4-1494d2dc71ca",
+                "resourcePath": "objects\\oTimedBasicAttack\\oTimedBasicAttack.yy",
                 "resourceType": "GMObject"
             }
         },

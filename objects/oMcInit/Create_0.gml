@@ -5,6 +5,6 @@ maxHealth = 10;
 curDamage = 2;
 curMana = 10;
 maxMana = 10;
-curSpellsLearnt = ["Fireball", "Silence", "Poison", "Charm", "Bone Crack", "Blind", "Scare"];
+curSpellsLearnt = ["Fireball", "Damage Increase", "Poison", "Charm", "Bone Crack", "Blind", "Scare"];
 curSummonsLearnt = [];
 curSkillsLearnt = [];

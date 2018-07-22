@@ -101,6 +101,17 @@ effect[7, TARGET]      = 0;
 effect[7, DURATION]    = 50;
 effect[7, FUNCTION]    = "damagedown";
 effect[7, DESCRIPTION] = "Burning for " + string(effect[7, VALUE]) + " damage a turn.";
+
+effect[8, ID]          = "8";
+effect[8, SPRITE]      = noone;
+effect[8, ICON]        = s_spDmgBonusIcon;
+effect[8, NAME]        = "Increase Damage";
+effect[8, ATTR]        = "buff";
+effect[8, VALUE]       = 2;
+effect[8, TARGET]      = 0;
+effect[8, DURATION]    = 50;
+effect[8, FUNCTION]    = "damageup";
+effect[8, DESCRIPTION] = "Burning for " + string(effect[7, VALUE]) + " damage a turn.";
 #endregion
 
 var name = argument0;

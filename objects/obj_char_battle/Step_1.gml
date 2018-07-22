@@ -5,3 +5,9 @@ for(i = 0; i < array_height_2d(curDebuffs); i++) {
 		minusDamage = effectDB(curDebuffs[i, 0], 5);	
 	}
 }
+
+for(i = 0; i < array_height_2d(curBuffs); i++) {
+	if(effectDB(curBuffs[i, 0], 8) == "damageup") {
+		bonusDamage = effectDB(curBuffs[i, 0], 5);	
+	}
+}

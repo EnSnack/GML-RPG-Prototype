@@ -11,8 +11,8 @@ for(i = 0; i < array_length_1d(characters); i++) {
 	if(array_height_2d(characters[i].curBuffs) > 0) {
 		for(j = 0; j < array_height_2d(characters[i].curBuffs); j++) {
 			icon = effectDB(characters[i].curBuffs[j, 0], 2);
-			draw_sprite(icon, 0, 300 + (j * 20), 60);
-			draw_text(310 + (j * 20), 70, characters[i].curBuffs[j, 1]);
+			draw_sprite(icon, 0, characters[i].x + (j * 20), characters[i].y);
+			draw_text(characters[i].x + (j * 20) + 5, characters[i].y+5, characters[i].curBuffs[j, 1]);
 		}
 	}
 	if(array_height_2d(characters[i].curDebuffs) > 0) {
