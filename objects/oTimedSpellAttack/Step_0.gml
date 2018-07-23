@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(arrowy <= target.y+56 && !done && clicked) {
+if(points <= 0) {
+	points = 0;	
+}
+/*if(arrowy <= target.y+56 && !done && clicked) {
 	var timedScore = arrowy;
 	if(timedScore < target.y-16) {
 		result = 0.5;	
@@ -15,4 +18,4 @@ if(arrowy <= target.y+56 && !done && clicked) {
 	target.curHealth = target.curHealth - damagedone;
 	player.state = "end";
 	instance_destroy(self);
-}
+}*/

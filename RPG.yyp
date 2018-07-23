@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "30bee755-83b2-4d4f-b8ac-04434bc5a8a7",
+            "Value": {
+                "id": "9572b379-aed9-4ef1-940f-f0be7affa1c6",
+                "resourcePath": "sprites\\sSpellThingTest\\sSpellThingTest.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "345793ab-9042-4779-abcf-91749056ada9",
             "Value": {
                 "id": "0da70a85-2190-4676-b2af-bdbe6fb68bd3",
@@ -460,6 +468,14 @@
                 "id": "c2ab13b4-818a-427e-82ec-11a6db6ef2a8",
                 "resourcePath": "sprites\\s_spBowDownIcon\\s_spBowDownIcon.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7c217798-6bbc-4d20-bcdf-f91cc6353bf1",
+            "Value": {
+                "id": "94d5d351-dcb5-4158-8ce9-935ad985bfc3",
+                "resourcePath": "objects\\oTimedSpellAttack\\oTimedSpellAttack.yy",
+                "resourceType": "GMObject"
             }
         },
         {

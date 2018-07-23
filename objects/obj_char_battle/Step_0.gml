@@ -84,7 +84,8 @@ if(active) {
 		}
 		if (keyboard_check_pressed(combat_inputs[0]) && curMagicSelected != 0) {
 			state = "lock";
-			instance_create_layer(0,0,"Technical",oSpellController);
+			io_clear();
+			instance_create_layer(0,0,"Technical",oTimedSpellAttack);
 		}
 		if(curMagicSelected != 0) {
 			switch(spellCast[TARGET-1]) {
