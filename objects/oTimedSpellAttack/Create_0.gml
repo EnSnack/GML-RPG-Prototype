@@ -9,4 +9,6 @@ pointspeed = 10;
 clicked = noone;
 done = false;
 result = noone;
-alarm[0] = 30;
+timer = 60*5;
+alarm[0] = timer;
+alarm[1] = 30;
