@@ -46,4 +46,5 @@ curMagicSelected = 0;
 #region EasyUseVariables
 leftParty = oCombatController.partyLeft;
 rightParty = oCombatController.partyRight;
+_choice = 0;
 #endregion
